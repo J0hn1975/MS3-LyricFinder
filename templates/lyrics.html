@@ -3,12 +3,30 @@
 
     <h2>Im extending the base template!</h2>
 
-    {% for lyric in lyrics %}
+    
+    
         {{ lyric.music_genre }}<br>
         {{ lyric.artist_name }}<br>
         {{ lyric.song_title }}<br>
-        {{ lyric.song_lyrics }}<br>
+        <br>
         {{ lyric.song_composer }}<br>
-    {% endfor %}
     
+
+    <div class="col s12 m6 l3">
+        {% for lyric in lyric %}
+        <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="https://static.billboard.com/files/media/acdc-back-in-black-album-cover-650-compressed.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">{{ lyric.artist_name }}<i class="material-icons right">more_vert</i></span>
+              <p><a href="#">This is a link</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+              <p>{{ lyric.song_lyrics }}</p>
+            </div>
+       
+          </div>
+        {% endfor %}
 {% endblock %}
