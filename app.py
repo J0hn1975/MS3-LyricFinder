@@ -106,8 +106,21 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/add_lyrics")
+@app.route("/add_lyrics", methods=["GET", "POST"])
 def add_lyrics():
+    if request.method == "POST":
+        lyrics = {
+            "music_genre": request.form.get("music_genre"),
+            "artist_name": request.form.get("artist_name"),
+            "song_title": request.form.get("song_title"),
+            "song_lyrics": request.form.get("song_lyrics"),
+            "song_composer": request.form.get("song_composer"),
+            "created_by": session["user"]
+        }
+        mongo.db.lyrics.insert_one(lyrics)
+        flash("Lyrics Sucessfully Added")
+        return redirect(url_for("get_lyrics"))
+
     genre = mongo.db.genre.find().sort("music_genre", 1)
     return render_template("add_lyrics.html", genre=genre)
 
