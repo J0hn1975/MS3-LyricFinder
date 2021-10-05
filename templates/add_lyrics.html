@@ -3,36 +3,47 @@
 
 <h3 class="light-blue-text text-darken-4 center-align">Add Lyrics</h3>
 
-    <div class="row">
+    <div class="row card-panel grey lighten-5">
         <form class="col s12" method="POST" action="">
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-user-circle prefix light-blue-text text-darken-4"></i>
-                    <input id="icon_prefix" type="text" class="validate">
-                    <label for="icon_prefix">Music Genre</label>
+                    <input id="music_genre" name="music_genre" type="text" class="validate">
+                    <label for="music_genre">Music Genre</label>
                 </div>
+            </div>
+            <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-phone prefix light-blue-text text-darken-4"></i>
-                    <input id="icon_telephone" type="tel" class="validate">
-                    <label for="icon_telephone">Artist Name</label>
+                    <input id="artist_name" name="artist_name" type="text" class="validate">
+                    <label for="artist_name">Artist Name</label>
                 </div>
+            </div>
+            <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-phone prefix light-blue-text text-darken-4"></i>
-                    <input id="icon_telephone" type="tel" class="validate">
-                    <label for="icon_telephone">Song Title</label>
+                    <input id="song_title" name="song_title" type="text" class="validate">
+                    <label for="song_title">Song Title</label>
                 </div>
+            </div>
+            <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+                        <textarea id="song_lyrics" name="song_lyrics" minlength="5"
+                         maxlength="2000" class="materialize-textarea validate" required></textarea>
+                        <label for="song_lyrics">Song Lyrics</label>
+                </div>
+            </div>
+            <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-phone prefix light-blue-text text-darken-4"></i>
-                    <input id="icon_telephone" type="tel" class="validate">
-                    <label for="icon_telephone">Song Lyrics</label>
-                </div>
-                <div class="input-field col s12">
-                    <i class="fas fa-phone prefix light-blue-text text-darken-4"></i>
-                    <input id="icon_telephone" type="tel" class="validate">
-                    <label for="icon_telephone">Song Composer</label>
+                    <input id="song_composer" name="song_composer" type="text" class="validate">
+                    <label for="song_composer">Song Composer</label>
                 </div>
             </div>
         </form>
     </div>
+        
+           
 
 {% endblock %}
