@@ -108,7 +108,8 @@ def logout():
 
 @app.route("/add_lyrics")
 def add_lyrics():
-    return render_template("add_lyrics.html")
+    genre = mongo.db.genre.find().sort("music_genre", 1)
+    return render_template("add_lyrics.html", genre=genre)
 
 
 if __name__ == "__main__":

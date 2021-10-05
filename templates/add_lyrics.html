@@ -8,6 +8,18 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-user-circle prefix light-blue-text text-darken-4"></i>
+                    <select id="music_genre" name="music_genre" class="validate" required>
+                    <option value="" disabled selected>Choose Genre</option>
+                    {% for genre in genre %}
+                        <option value="{{ genre.music_genre }}">{{ genre.music_genre }}</option>
+                    {% endfor %}
+                    </select>
+                    <label for="music_genre">Music Genre</label>
+                </div>                
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-user-circle prefix light-blue-text text-darken-4"></i>
                     <input id="music_genre" name="music_genre" type="text" class="validate">
                     <label for="music_genre">Music Genre</label>
                 </div>
