@@ -2,60 +2,60 @@
 {% block content %}
 
 <h3 class="light-blue-text text-darken-4 center-align">Add Lyrics</h3>
-
-    <div class="row card-panel grey lighten-5">
-        <form class="col s12" method="POST" action="">
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-user-circle prefix light-blue-text text-darken-4"></i>
-                    <select id="music_genre" name="music_genre" class="validate" required>
-                    <option value="" disabled selected>Choose Genre</option>
-                    {% for genre in genre %}
-                        <option value="{{ genre.music_genre }}">{{ genre.music_genre }}</option>
-                    {% endfor %}
-                    </select>
-                    <label for="music_genre">Music Genre</label>
-                </div>                
-            </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-user-circle prefix light-blue-text text-darken-4"></i>
-                    <input id="music_genre" name="music_genre" type="text" class="validate">
-                    <label for="music_genre">Music Genre</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-phone prefix light-blue-text text-darken-4"></i>
-                    <input id="artist_name" name="artist_name" type="text" class="validate">
-                    <label for="artist_name">Artist Name</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-phone prefix light-blue-text text-darken-4"></i>
-                    <input id="song_title" name="song_title" type="text" class="validate">
-                    <label for="song_title">Song Title</label>
-                </div>
-            </div>
-            <div class="row">
-                    <div class="input-field col s12">
-                        <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
-                        <textarea id="song_lyrics" name="song_lyrics" minlength="5"
-                         maxlength="2000" class="materialize-textarea validate" required></textarea>
-                        <label for="song_lyrics">Song Lyrics</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-phone prefix light-blue-text text-darken-4"></i>
-                    <input id="song_composer" name="song_composer" type="text" class="validate">
-                    <label for="song_composer">Song Composer</label>
-                </div>
-            </div>
-        </form>
-    </div>
-        
-           
+<!-- music genre select -->
+<div class="row card-panel grey lighten-5">
+   <form class="col s12" method="POST" action="{{ url_for('add_lyrics') }}">
+      <div class="row">
+         <div class="input-field col s12">
+            <i class="fas fa-user-circle prefix light-blue-text text-darken-4"></i>
+            <select id="music_genre" name="music_genre" class="validate" required>
+               <option value="" disabled selected>Choose Genre</option>
+               {% for genre in genre %}
+               <option value="{{ genre.music_genre }}">{{ genre.music_genre }}</option>
+               {% endfor %}
+            </select>
+            <label for="music_genre">Music Genre</label>
+         </div>
+      </div>
+      <!--artist name -->
+      <div class="row">
+         <div class="input-field col s12">
+            <i class="fas fa-phone prefix light-blue-text text-darken-4"></i>
+            <input id="artist_name" name="artist_name" type="text" class="validate" />
+            <label for="artist_name">Artist Name</label>
+         </div>
+      </div>
+      <!-- song title -->
+      <div class="row">
+         <div class="input-field col s12">
+            <i class="fas fa-phone prefix light-blue-text text-darken-4"></i>
+            <input id="song_title" name="song_title" type="text" class="validate" />
+            <label for="song_title">Song Title</label>
+         </div>
+      </div>
+      <!-- song lyrics -->
+      <div class="row">
+         <div class="input-field col s12">
+            <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+            <textarea id="song_lyrics" name="song_lyrics" minlength="5" maxlength="2000" class="materialize-textarea validate" required></textarea>
+            <label for="song_lyrics">Song Lyrics</label>
+         </div>
+      </div>
+      <!--song composer -->
+      <div class="row">
+         <div class="input-field col s12">
+            <i class="fas fa-phone prefix light-blue-text text-darken-4"></i>
+            <input id="song_composer" name="song_composer" type="text" class="validate" />
+            <label for="song_composer">Song Composer</label>
+         </div>
+      </div>
+      <!-- submit button -->
+      <div class="row">
+         <div class="col s12 center-align">
+            <button type="submit" class="btn-large light-blue darken-1 text-shadow">Add Lyrics <i class="fas fa-plus-square right"></i></button>
+         </div>
+      </div>
+   </form>
+</div>
 
 {% endblock %}
