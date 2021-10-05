@@ -7,7 +7,7 @@
    <form class="col s12" method="POST" action="{{ url_for('add_lyrics') }}">
       <div class="row">
          <div class="input-field col s12">
-            <i class="fas fa-user-circle prefix light-blue-text text-darken-4"></i>
+            <i class="fas fa-drum prefix light-blue-text text-darken-4"></i>
             <select id="music_genre" name="music_genre" class="validate" required>
                <option value="" disabled selected>Choose Genre</option>
                {% for genre in genre %}
@@ -20,7 +20,7 @@
       <!--artist name -->
       <div class="row">
          <div class="input-field col s12">
-            <i class="fas fa-phone prefix light-blue-text text-darken-4"></i>
+            <i class="fas fa-signature prefix light-blue-text text-darken-4"></i>
             <input id="artist_name" name="artist_name" type="text" class="validate" />
             <label for="artist_name">Artist Name</label>
          </div>
@@ -28,7 +28,7 @@
       <!-- song title -->
       <div class="row">
          <div class="input-field col s12">
-            <i class="fas fa-phone prefix light-blue-text text-darken-4"></i>
+            <i class="fas fa-music prefix light-blue-text text-darken-4"></i>
             <input id="song_title" name="song_title" type="text" class="validate" />
             <label for="song_title">Song Title</label>
          </div>
@@ -44,9 +44,17 @@
       <!--song composer -->
       <div class="row">
          <div class="input-field col s12">
-            <i class="fas fa-phone prefix light-blue-text text-darken-4"></i>
+            <i class="fas fa-pen prefix light-blue-text text-darken-4"></i>
             <input id="song_composer" name="song_composer" type="text" class="validate" />
             <label for="song_composer">Song Composer</label>
+         </div>
+      </div>
+      <!-- artwork or image -->
+      <div class="row">
+         <div class="input-field col s12">
+            <i class="fas fa-image prefix light-blue-text text-darken-4"></i>
+            <input id="image_url" name="image_url" type="url" class="validate" />
+            <label for="image_url">Add Image</label>
          </div>
       </div>
       <!-- submit button -->
