@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3 class="light-blue-text text-darken-4 center-align">Edit Lyrics</h3>
+<!-- music genre select -->
+<div class="row card-panel grey lighten-5">
+   <form class="col s12" method="POST" action="{{ url_for('edit_lyrics', lyrics_id=lyric._id) }}">
+      <div class="row">
+         <div class="input-field col s12">
+            <i class="fas fa-drum prefix light-blue-text text-darken-4"></i>
+            <select id="music_genre" name="music_genre" class="validate" required>
+               <option value="" disabled selected>Choose Genre</option>
+               {% for genre in genre %}
+               <option value="{{ genre.music_genre }}">{{ genre.music_genre }}</option>
+               {% endfor %}
+            </select>
+            <label for="music_genre">Music Genre</label>
+         </div>
+      </div>
+      <!--artist name -->
+      <div class="row">
+         <div class="input-field col s12">
+            <i class="fas fa-signature prefix light-blue-text text-darken-4"></i>
+            <input id="artist_name" name="artist_name" type="text" class="validate" required/>
+            <label for="artist_name">Artist Name</label>
+         </div>
+      </div>
+      <!-- song title -->
+      <div class="row">
+         <div class="input-field col s12">
+            <i class="fas fa-music prefix light-blue-text text-darken-4"></i>
+            <input id="song_title" name="song_title" type="text" class="validate" required/>
+            <label for="song_title">Song Title</label>
+         </div>
+      </div>
+      <!-- song lyrics -->
+      <div class="row">
+         <div class="input-field col s12">
+            <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+            <textarea id="song_lyrics" name="song_lyrics" minlength="5" maxlength="2000" class="materialize-textarea validate" required></textarea>
+            <label for="song_lyrics">Song Lyrics</label>
+         </div>
+      </div>
+      <!--song composer -->
+      <div class="row">
+         <div class="input-field col s12">
+            <i class="fas fa-pen prefix light-blue-text text-darken-4"></i>
+            <input id="song_composer" name="song_composer" type="text" class="validate" required/>
+            <label for="song_composer">Song Composer</label>
+         </div>
+      </div>
+      <!-- artwork or image -->
+      <div class="row">
+         <div class="input-field col s12">
+            <i class="fas fa-image prefix light-blue-text text-darken-4"></i>
+            <input id="image_url" name="image_url" type="url" class="validate" required/>
+            <label for="image_url">Add Image</label>
+         </div>
+      </div>
+      <!-- submit button -->
+      <div class="row">
+         <div class="col s12 center-align">
+            <button type="submit" class="btn-large light-blue darken-1 text-shadow">Edit Lyrics <i class="fas fa-edit right"></i></button>
+         </div>
+      </div>
+   </form>
+</div>
+
+{% endblock %}

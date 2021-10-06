@@ -125,6 +125,14 @@ def add_lyrics():
     return render_template("add_lyrics.html", genre=genre)
 
 
+@app.route("/edit_lyrics/<lyrics_id>", methods=["GET", "POST"])
+def edit_lyrics(lyrics_id):
+    lyric = mongo.db.lyrics.find_one({"_id": ObjectId(lyrics_id)})
+
+    genre = mongo.db.genre.find().sort("music_genre", 1)
+    return render_template("edit_lyrics.html", lyric=lyric, genre=genre)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
