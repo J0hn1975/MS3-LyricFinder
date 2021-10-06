@@ -115,6 +115,7 @@ def add_lyrics():
             "song_title": request.form.get("song_title"),
             "song_lyrics": request.form.get("song_lyrics"),
             "song_composer": request.form.get("song_composer"),
+            "image_url": request.form.get("image_"),
             "created_by": session["user"]
         }
         mongo.db.lyrics.insert_one(lyrics)
@@ -127,8 +128,20 @@ def add_lyrics():
 
 @app.route("/edit_lyrics/<lyrics_id>", methods=["GET", "POST"])
 def edit_lyrics(lyrics_id):
-    lyric = mongo.db.lyrics.find_one({"_id": ObjectId(lyrics_id)})
+    if request.method == "POST":
+        submit = {
+            "music_genre": request.form.get("music_genre"),
+            "artist_name": request.form.get("artist_name"),
+            "song_title": request.form.get("song_title"),
+            "song_lyrics": request.form.get("song_lyrics"),
+            "song_composer": request.form.get("song_composer"),
+            "image_url": request.form.get("image_"),
+            "created_by": session["user"]
+        }
+        mongo.db.lyrics.update({"_id": ObjectId(lyrics_id)}, submit)
+        flash("Lyrics Sucessfully Updated")
 
+    lyric = mongo.db.lyrics.find_one({"_id": ObjectId(lyrics_id)})
     genre = mongo.db.genre.find().sort("music_genre", 1)
     return render_template("edit_lyrics.html", lyric=lyric, genre=genre)
 

@@ -22,20 +22,21 @@
    </form>
 </div>
 <!-- Main Content-->
-<main class="container-fluid">
+{% if lyric|length > 0 %}
+
    <div class="row">
       {% for lyric in lyric %}<br />
-      <div class="col s12 m6 l3">
-         <div class="card large">
+      <div class="col s12 m6 l4">
+         <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
-               <img class="activator" src="https://static.billboard.com/files/media/acdc-back-in-black-album-cover-650-compressed.jpg" />
+               <img class="activator" src="{{ lyric.image_url }}" />
             </div>
             <div class="card-content">
-               <span class="card-title activator grey-text text-darken-4">Artist Name: {{ lyric.artist_name }}<i class="fas fa-plus-circle right"></i></span><br />
+               <span class="card-title activator grey-text text-darken-4">Artist Name: {{ lyric.artist_name }}<i class="fas fa-plus-circle right"></i></span><br>
                <p>Music Genre: {{ lyric.music_genre }}</p>
-               <br />
+               <br>
                <p>Composer: {{ lyric.song_composer }}</p>
-               <br />
+               <br>
                <p>Created by: {{ lyric.created_by }}</p>
             </div>
             <div class="card-reveal">
@@ -44,13 +45,20 @@
                <p class="flow-text">{{ lyric.song_lyrics }}</p>
             </div>
             <div class="row center-align">
+               {% if session.user|lower == lyric.created_by|lower %}
                <a href="" class="btn-small green accent-4">Done</a>
                <a href="{{ url_for('edit_lyrics', lyrics_id=lyric._id) }}" class="btn-small light-blue lighten-1">Edit</a>
+               {% endif %}
             </div>
          </div>
       </div>
    </div>
-</main>
+
 
       {% endfor %}
+      {% else %}
+        <!-- Text To Display If No Reviews Found -->
+        <h3 class="red-text center-align">No Search Results Found</h3>
+    {% endif %}
+
 {% endblock %}
