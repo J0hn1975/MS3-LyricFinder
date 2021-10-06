@@ -27,16 +27,18 @@
 
     
     
-        <br>
+        
         {{ lyric.artist_name }}<br>
         {{ lyric.song_title }}<br>
         {{ lyric.song_lyrics }}<br>
         {{ lyric.song_composer }}<br>
         {{ lyric.artist_name }}<br>
+        {{ lyric.music_genre }}<br> 
+        {{ lyric.created_by }}<br>
 
 
         <div class="row">
-          {% for lyric in lyric %}
+          {% for lyric in lyric %}<br>         
           <div class="col s12 m6 l3">
             <div class="card medium">
                 <div class="card-image waves-effect waves-block waves-light">
@@ -44,15 +46,21 @@
                 </div>
                 <div class="card-content">
                   <span class="card-title activator grey-text text-darken-4">Artist Name: {{ lyric.artist_name }}<i class="material-icons right">more_vert</i></span>
-                  <span class="card-title activator grey-text text-darken-4">{{ lyric.music_genre }}<i class="material-icons right">more_vert</i></span>
+                  <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
                   <p><a href="#">This is a link</a></p>
-                  <p>by: {{ lyric.created_by }}</p>
+                  <p>by: </p>
                 </div>
                 <div class="card-reveal">
                   <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
                   <p>Here is some more information about this product that is only revealed once clicked on.</p>
                 </div>
+                <div class="row center-align">
+                  <i class="fas fa-caret-down"></i>
+                  <a href="" class="btn-small green accent-4">Done</a>
+                  <a href="" class="btn-small light-blue lighten-1">Edit</a>
                </div>
+              
+            </div>                                             
         </div>
        
             
