@@ -146,6 +146,13 @@ def edit_lyrics(lyrics_id):
     return render_template("edit_lyrics.html", lyric=lyric, genre=genre)
 
 
+@app.route("/delete_lyrics/<lyrics_id>")
+def delete_lyrics(lyrics_id):
+    mongo.db.lyrics.remove({"_id": ObjectId(lyrics_id)})
+    flash("Lyrics Successfully Deleted")
+    return redirect(url_for("get_lyrics"))
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
