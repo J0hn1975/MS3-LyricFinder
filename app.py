@@ -153,6 +153,12 @@ def delete_lyrics(lyrics_id):
     return redirect(url_for("get_lyrics"))
 
 
+@app.route("/get_genres")
+def get_genres():
+    genre = list(mongo.db.genre.find().sort("music_genre", 1))
+    return render_template("genres.html", genre=genre)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),

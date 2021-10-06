@@ -25,7 +25,7 @@
 {% if lyric|length > 0 %}
 
    <div class="row">
-      {% for lyric in lyric %}<br />
+{% for lyric in lyric %}
       <div class="col s12 m6 l4">
          <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
@@ -51,14 +51,16 @@
                {% endif %}
             </div>
          </div>
+      
       </div>
+            {% endfor %}
    </div>
 
 
-      {% endfor %}
+   
       {% else %}
         <!-- Text To Display If No Reviews Found -->
         <h3 class="red-text center-align">No Search Results Found</h3>
-    {% endif %}
+   {% endif %}
 
 {% endblock %}

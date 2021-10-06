@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
+
 .text-shadow {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
@@ -16,4 +17,9 @@
 .brand-logo {
     font-family: 'Lobster', cursive;
 }
+
+.btn-small {
+    margin-top: 30px;
+}
+
 
