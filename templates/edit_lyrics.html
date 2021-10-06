@@ -9,9 +9,13 @@
          <div class="input-field col s12">
             <i class="fas fa-drum prefix light-blue-text text-darken-4"></i>
             <select id="music_genre" name="music_genre" class="validate" required>
-               <option value="" disabled selected>Choose Genre</option>
+               <option value="" disabled>Choose Genre</option>
                {% for genre in genre %}
-               <option value="{{ genre.music_genre }}">{{ genre.music_genre }}</option>
+                  {% if genre.music_genre == lyric.music_genre %}
+                     <option value="{{ genre.music_genre }}" selected>{{ genre.music_genre }}</option>
+               {% else %}
+                     <option value="{{ genre.music_genre }}">{{ genre.music_genre }}</option>
+                  {% endif %}
                {% endfor %}
             </select>
             <label for="music_genre">Music Genre</label>
@@ -21,7 +25,7 @@
       <div class="row">
          <div class="input-field col s12">
             <i class="fas fa-signature prefix light-blue-text text-darken-4"></i>
-            <input id="artist_name" name="artist_name" type="text" class="validate" required/>
+            <input id="artist_name" name="artist_name" value="{{ lyric.artist_name }}" type="text" class="validate" required/>
             <label for="artist_name">Artist Name</label>
          </div>
       </div>
@@ -29,7 +33,7 @@
       <div class="row">
          <div class="input-field col s12">
             <i class="fas fa-music prefix light-blue-text text-darken-4"></i>
-            <input id="song_title" name="song_title" type="text" class="validate" required/>
+            <input id="song_title" name="song_title" value="{{ lyric.song_title }}" type="text" class="validate" required/>
             <label for="song_title">Song Title</label>
          </div>
       </div>
@@ -37,7 +41,9 @@
       <div class="row">
          <div class="input-field col s12">
             <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
-            <textarea id="song_lyrics" name="song_lyrics" minlength="5" maxlength="2000" class="materialize-textarea validate" required></textarea>
+            <textarea id="song_lyrics" name="song_lyrics" minlength="5" maxlength="2000" class="materialize-textarea validate" required>
+               {{- lyric.song_lyrics -}}
+            </textarea>
             <label for="song_lyrics">Song Lyrics</label>
          </div>
       </div>
@@ -45,7 +51,7 @@
       <div class="row">
          <div class="input-field col s12">
             <i class="fas fa-pen prefix light-blue-text text-darken-4"></i>
-            <input id="song_composer" name="song_composer" type="text" class="validate" required/>
+            <input id="song_composer" name="song_composer" value="{{ lyric.song_composer }}"type="text" class="validate" required/>
             <label for="song_composer">Song Composer</label>
          </div>
       </div>
@@ -53,13 +59,17 @@
       <div class="row">
          <div class="input-field col s12">
             <i class="fas fa-image prefix light-blue-text text-darken-4"></i>
-            <input id="image_url" name="image_url" type="url" class="validate" required/>
+            <input id="image_url" name="image_url" value="{{ lyric.image_url }}"type="url" class="validate" required/>
             <label for="image_url">Add Image</label>
          </div>
       </div>
       <!-- submit button -->
       <div class="row">
          <div class="col s12 center-align">
+            <!-- cancel button -->
+            <a href="{{ url_for('get_lyrics') }}" class="btn-large red text-shadow">
+               Cancel <i class="fas fa -times-circle right"></i>
+            </a> 
             <button type="submit" class="btn-large light-blue darken-1 text-shadow">Edit Lyrics <i class="fas fa-edit right"></i></button>
          </div>
       </div>
