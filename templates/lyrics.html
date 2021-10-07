@@ -24,38 +24,44 @@
 <!-- Main Content-->
 {% if lyric|length > 0 %}
 
-   <div class="row">
-{% for lyric in lyric %}
-      <div class="col s12 m6 l4">
-         <div class="card">
-            <div class="card-image waves-effect waves-block waves-light">
-               <img class="activator" src="{{ lyric.image_url }}" />
+ <main class="container">
+    <div class="row">
+      {% for lyric in lyric %}
+       <div class="col s12 l6">
+         <div class="card hoverable">
+            <div class="card-image">
+               <img class="" src="{{ lyric.image_url }}" />
+               <span class="activator btn-floating halfway-fab waves-effect waves-light"><i class="fas fa-plus-circle right"></i></span>              
             </div>
-            <div class="card-content">
-               <span class="card-title activator grey-text text-darken-4">Artist Name: {{ lyric.artist_name }}<i class="fas fa-plus-circle right"></i></span><br>
-               <p>Music Genre: {{ lyric.music_genre }}</p>
-               <br>
-               <p>Composer: {{ lyric.song_composer }}</p>
-               <br>
-               <p>Created by: {{ lyric.created_by }}</p>
-            </div>
-            <div class="card-reveal">
-               <span class="card-title grey-text text-darken-4">Song Title: {{ lyric.song_title }}<i class="fas fa-minus-circle right"></i></span>
+             <div class="card-content">
+                <span class="card-title center-align text-black">Artist Name: {{ lyric.artist_name }}</span>
+                <div class="card-subtitles center-align text-shadow grey lighten-1">
+                  <p>Music Genre: {{ lyric.music_genre }}</p>
+                  <p>Composer: {{ lyric.song_composer }}</p>
+                  <p>Created by: {{ lyric.created_by }}</p>
+                </div>
+             </div>
+             
+             <div class="card-reveal">
+               <span class="song-title grey-text text-darken-4">Song Title: {{ lyric.song_title }}<i class="fas fa-minus-circle right"></i></span>
                <h5>Lyrics</h5>
                <p class="flow-text">{{ lyric.song_lyrics }}</p>
             </div>
-            <div class="row center-align">
-               {% if session.user|lower == lyric.created_by|lower %}
-               <a href="{{ url_for('delete_lyrics', lyrics_id=lyric._id) }}" class="btn-small green accent-4">Done</a>
-               <a href="{{ url_for('edit_lyrics', lyrics_id=lyric._id) }}" class="btn-small light-blue lighten-1">Edit</a>
-               {% endif %}
-            </div>
-         </div>
-      
-      </div>
-            {% endfor %}
-   </div>
-
+             <div class="card-action">
+                <div class="row center-align">
+                  {% if session.user|lower == lyric.created_by|lower %}
+                  <a href="{{ url_for('delete_lyrics', lyrics_id=lyric._id) }}" class="btn-small green accent-4">Done</a>
+                  <a href="{{ url_for('edit_lyrics', lyrics_id=lyric._id) }}" class="btn-small light-blue lighten-1">Edit</a>
+                  {% endif %}
+                </div>
+             </div>
+          </div> 
+          
+      {% endfor %}         
+       </div>
+    </div>
+    
+ </main>
 
    
       {% else %}
