@@ -115,7 +115,7 @@ def add_lyrics():
             "song_title": request.form.get("song_title"),
             "song_lyrics": request.form.get("song_lyrics"),
             "song_composer": request.form.get("song_composer"),
-            "image_url": request.form.get("image_"),
+            "image_url": request.form.get("image_url"),
             "created_by": session["user"]
         }
         mongo.db.lyrics.insert_one(lyrics)
