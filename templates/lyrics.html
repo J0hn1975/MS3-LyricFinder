@@ -24,17 +24,18 @@
 <!-- Main Content-->
 {% if lyric|length > 0 %}
 
-<main class="container">
+<main class="container-fluid">
+   {% for lyric in lyric %}
     <div class="row">
-      {% for lyric in lyric %}
-       <div class="col s12 l6">
+      
+       <div class="col s12 m6 l6 xl4">
          <div class="card hoverable">
             <div class="card-image">
                <img class="activator" src="{{ lyric.image_url }}" />
                              
             </div>
              <div class="card-content">
-                <span class="card-title activator center-align text-black">Artist Name: {{ lyric.artist_name }}<i class="fas fa-plus-square right"></i></i></span>
+                <span class="card-title activator center-align text-black">Artist Name: {{ lyric.artist_name }}<i class="fas fa-plus-circle right"></i></i></span>
                 <div class="card-subtitles center-align text-shadow grey lighten-1">
                   <p>Music Genre: {{ lyric.music_genre }}</p>
                   <p>Composer: {{ lyric.song_composer }}</p>
@@ -43,7 +44,7 @@
              </div>
              
              <div class="card-reveal">
-               <span class="card-title center-align text-black">Song Title: {{ lyric.song_title }}<i class="fas fa-minus-square right"></i></i></span>
+               <span class="card-title center-align text-black">Song Title: {{ lyric.song_title }}<i class="fas fa-minus-circle right"></i></i></span>
                <h5>Lyrics</h5>
                <p class="flow-text">{{ lyric.song_lyrics }}</p>
             </div>
@@ -59,8 +60,10 @@
              </div>
           </div> 
           
-      {% endfor %}         
+             
        </div>
+   {% endfor %}   
+     
     </div>
     
     
