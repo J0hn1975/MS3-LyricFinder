@@ -69,4 +69,20 @@ h5 {
     border-radius: 5px;
 }
 
+.card .card-content .card-title i,
+.card .card-reveal .card-title i {
+    line-height: 32px;
+
+
+
+}
+
+i.fa-plus-square {
+    color: green;
+}
+
+i.fa-minus-square {
+    color: red;
+}
+
 

@@ -24,17 +24,17 @@
 <!-- Main Content-->
 {% if lyric|length > 0 %}
 
- <main class="container">
+<main class="container">
     <div class="row">
       {% for lyric in lyric %}
        <div class="col s12 l6">
          <div class="card hoverable">
             <div class="card-image">
-               <img class="" src="{{ lyric.image_url }}" />
-               <span class="activator btn-floating halfway-fab waves-effect waves-light"><i class="fas fa-plus-circle right"></i></span>              
+               <img class="activator" src="{{ lyric.image_url }}" />
+                             
             </div>
              <div class="card-content">
-                <span class="card-title center-align text-black">Artist Name: {{ lyric.artist_name }}</span>
+                <span class="card-title activator center-align text-black">Artist Name: {{ lyric.artist_name }}<i class="fas fa-plus-square right"></i></i></span>
                 <div class="card-subtitles center-align text-shadow grey lighten-1">
                   <p>Music Genre: {{ lyric.music_genre }}</p>
                   <p>Composer: {{ lyric.song_composer }}</p>
@@ -43,10 +43,12 @@
              </div>
              
              <div class="card-reveal">
-               <span class="song-title grey-text text-darken-4">Song Title: {{ lyric.song_title }}<i class="fas fa-minus-circle right"></i></span>
+               <span class="card-title center-align text-black">Song Title: {{ lyric.song_title }}<i class="fas fa-minus-square right"></i></i></span>
                <h5>Lyrics</h5>
                <p class="flow-text">{{ lyric.song_lyrics }}</p>
             </div>
+            
+            
              <div class="card-action">
                 <div class="row center-align">
                   {% if session.user|lower == lyric.created_by|lower %}
@@ -61,7 +63,8 @@
        </div>
     </div>
     
- </main>
+    
+</main>
 
    
       {% else %}
