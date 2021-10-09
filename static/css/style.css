@@ -3,9 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
 
-body {
-    background-color: #F9EBEA;
+* {
+    margin: 0px;
+    padding: 0px;
 }
+
+body {
+    flex-direction: column;
+    background-color: aqua;
+}
+
+
 
 p {
     font-size: 15px;
@@ -53,7 +61,7 @@ h5 {
 .card .card-title {
     font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
    
     
     
@@ -92,5 +100,6 @@ i.fa-plus-circle {
 i.fa-minus-circle {
     color: red;
 }
+
 
 
