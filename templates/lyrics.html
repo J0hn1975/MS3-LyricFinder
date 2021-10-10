@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
+<div class="container-fluid">
 <h3 class="light-blue-text text-darken-4 center-align">All Lyrics</h3>
 <!-- search box -->
 <div class="row card-panel grey lighten-5">
@@ -21,10 +22,11 @@
       </div>
    </form>
 </div>
+
 <!-- Main Content-->
 {% if lyric|length > 0 %}
 
-<main class="container-fluid">
+
    {% for lyric in lyric %}
     <div class="row">
       
@@ -67,7 +69,7 @@
     </div>
     
     
-</main>
+   </div>
 
    
       {% else %}
