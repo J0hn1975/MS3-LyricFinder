@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
+<div class="">
 <div class="parallax-container">
     <div class="parallax">
         <img src="https://motionarray.imgix.net/preview-204862-aYTxozfB5i-high_0000.jpg" alt="Books on library shelves">
@@ -9,15 +10,17 @@
 
 <div class="row container">
     <div class="col s12">
+        <div class="tracking-in-expand center-align">
+            <h3>Welcome to Lyric Finder</h3>
         {% if session.user %}
-        <h6>
+        <h4>
             Welcome back to Read-It! The site where you can share reviews of your favourite books
             with other avid readers. On our site, you can read reviews created by people who have
             read them independently; no paid reviews will ever be on our site.
             <br> <br>
             Check out existing book reviews <a href="{{ url_for('books') }}">here,</a> and why not
             add your own by clicking <a href="{{ url_for('add_book') }}">here?</a>
-        </h6>
+        </h4>
         {% else %}
         <h6>
             Welcome to Read-It! The site where you can share reviews of your favourite books
@@ -35,12 +38,14 @@
         {% endif %}
     </div>
 </div>
+</div>
 
 <!-- Bottom Parallax Image -->
 <div class="parallax-container parallax-lower">
     <div class="parallax">
         <img src="https://i.pinimg.com/originals/24/2b/4f/242b4f66b6d14b8a331c6e4289fe2ef5.jpg" alt="Books on library shelves">
     </div>
+</div>
 </div>
 
 {% endblock %}
