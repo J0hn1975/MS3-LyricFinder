@@ -8,10 +8,7 @@
     padding: 0px;
 }
 
-body {
-    flex-direction: column;
-    background-color: aqua;
-}
+
 
 
 
@@ -100,6 +97,32 @@ i.fa-plus-circle {
 i.fa-minus-circle {
     color: red;
 }
+
+.parallax-container {
+    position: relative;
+    height: 400px;
+    
+    
+}
+
+.parallax-lower {
+    margin-top: 35px;
+}
+
+
+
+
+main {
+    flex: 1 0 auto;
+}
+
+
+.container {
+    margin: 0 auto;
+    max-width: 1925px;
+    width: 100%;
+}
+
 
 
 
