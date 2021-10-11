@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class="">
+
 <div class="parallax-container">
     <div class="parallax">
         <img src="https://motionarray.imgix.net/preview-204862-aYTxozfB5i-high_0000.jpg" alt="Books on library shelves">
@@ -18,8 +18,8 @@
             with other avid readers. On our site, you can read reviews created by people who have
             read them independently; no paid reviews will ever be on our site.
             <br> <br>
-            Check out existing book reviews <a href="{{ url_for('books') }}">here,</a> and why not
-            add your own by clicking <a href="{{ url_for('add_book') }}">here?</a>
+            Check out existing book reviews <a href="#">here,</a> and why not
+            add your own by clicking <a href="#">here?</a>
         </h4>
         {% else %}
         <h6>
@@ -46,6 +46,6 @@
         <img src="https://i.pinimg.com/originals/24/2b/4f/242b4f66b6d14b8a331c6e4289fe2ef5.jpg" alt="Books on library shelves">
     </div>
 </div>
-</div>
+
 
 {% endblock %}

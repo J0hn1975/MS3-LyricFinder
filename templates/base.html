@@ -12,6 +12,7 @@
     <title>Lyric Finder</title>
 </head>
 <body>
+  
     <header>
         <!-- top navbar -->
         <nav class="nav-extended text-shadow light-blue darken-1">
@@ -67,15 +68,16 @@
       {% endwith %}
   </section>
 
-    <main class="container">
+  
+  
+  <main class="container">
     {% block content %}
-   
-    </main>
+    {% endblock %}
+</main>
+  </div>
 
-    <div class="container-fluid">
-     
-      {% endblock %}
-    </div>
+
+    {% block footer %}
     <footer class="page-footer">
       <div class="container">
         <div class="row">
@@ -101,6 +103,7 @@
         </div>
       </div>
     </footer>
+    {% endblock %}
         
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"

@@ -99,8 +99,11 @@ i.fa-minus-circle {
 }
 
 .parallax-container {
-    position: relative;
+   
     height: 400px;
+    min-width: 1925px;
+    width: 100%;
+    right: 25%;
     
     
 }
@@ -112,22 +115,20 @@ i.fa-minus-circle {
 
 
 
-main {
+.main {
     flex: 1 0 auto;
 }
 
-
-.container{
-    margin: 0 auto;
-    max-width: 1925px;
-    width: 100%;
+.content {
+    flex: 1;
 }
 
-.container-fluid {
-    margin: 0 auto;
-    max-width: 1350px;
-    width: 100%;
-}
+
+
+
+
+
+
 
 .tracking-in-expand {
 	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
