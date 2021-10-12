@@ -17,6 +17,11 @@ p {
     text-align: center;
 }
 
+h1 {
+    line-height:223%;
+    font-size: 3rem;
+}
+
 h5 {
     text-decoration: underline;
     text-align: center;
@@ -30,7 +35,11 @@ h5 {
     line-height: 2;
 }
 
-
+#register {
+    font-size: 25px;
+    line-height: 320%;
+    margin-bottom: 2px;
+}
 
 
 .brand-logo {
@@ -90,6 +99,7 @@ h5 {
 
 }
 
+
 i.fa-plus-circle {
     color: green;
 }
@@ -101,9 +111,8 @@ i.fa-minus-circle {
 .parallax-container {
    
     height: 400px;
-    min-width: 99.5vw;
-    width: 100%;
-    right: 25%;
+    min-width: 1925px;
+    right: 26.1%;
     
     
 }
@@ -126,10 +135,6 @@ i.fa-minus-circle {
 .content {
     flex: 1;
 }
-
-
-
-
 
 
 
