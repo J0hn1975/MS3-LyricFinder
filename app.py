@@ -169,13 +169,27 @@ def get_genres():
 def add_genres():
     if request.method == "POST":
         genre = {
-            "music_genre": request.form.get("music_genre")           
+            "music_genre": request.form.get("music_genre")
         }
         mongo.db.genre.insert_one(genre)
         flash("New Genre Added")
         return redirect(url_for("get_genres"))
 
     return render_template("add_genre.html")
+
+
+@app.route("/edit_genre/<genre_id>", methods=["GET", "POST"])
+def edit_genre(genre_id):
+    if request.method == "POST":
+        submit = {
+            "music_genre": request.form.get("music_genre")
+        }
+        mongo.db.genre.update({"_id": ObjectId(genre_id)}, submit)
+        flash("Genre Successfully Updated")
+        return redirect(url_for("get_genres"))
+
+    genre = mongo.db.genre.find_one({"_id": ObjectId(genre_id)})
+    return render_template("edit_genre.html", genre=genre)
 
 
 if __name__ == "__main__":
