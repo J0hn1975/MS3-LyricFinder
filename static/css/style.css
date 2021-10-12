@@ -101,12 +101,16 @@ i.fa-minus-circle {
 .parallax-container {
    
     height: 400px;
-    min-width: 1925px;
+    min-width: 99.5vw;
     width: 100%;
     right: 25%;
     
     
 }
+
+
+
+
 
 .parallax-lower {
     margin-top: 35px;
