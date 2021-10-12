@@ -165,6 +165,19 @@ def get_genres():
     return render_template("genres.html", genre=genre)
 
 
+@app.route("/add_genres", methods=["GET", "POST"])
+def add_genres():
+    if request.method == "POST":
+        genre = {
+            "music_genre": request.form.get("music_genre")           
+        }
+        mongo.db.genre.insert_one(genre)
+        flash("New Genre Added")
+        return redirect(url_for("get_genres"))
+
+    return render_template("add_genre.html")
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
