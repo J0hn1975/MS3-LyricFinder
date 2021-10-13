@@ -18,9 +18,13 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
+@app.errorhandler(404)
+def page_not_found(error):
+    return render_template('404.html'), 404
+
 @app.route("/")
-@app.route("/home_page")
-def home_page():
+@app.route("/home")
+def home():
     return render_template("index.html")
 
 
@@ -203,4 +207,3 @@ if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
             debug=True)
-
