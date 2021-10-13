@@ -31,8 +31,9 @@
 > 11. [Acknowledgements](#acknowledgements)
 
 ## Target Audience
-> * New holiday makers keens to experience island life
-> * Visitors who are interested in the natural beauty the island has to offer
+The audience ideally targerted are music lovers who enjoy finding out the lyrics to their favourite songs. 
+On this site they will be view existing lyrics, as well as add and edit their own lyrics.
+
 
 # The 5 Planes of UX
 ## Stratergy
