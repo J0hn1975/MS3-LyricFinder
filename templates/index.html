@@ -12,30 +12,17 @@
     <div class="col s12">
         <div class="tracking-in-expand center-align">
             <h3>Welcome to Lyric Finder</h3>
-        {% if session.user %}
-        <h4>
-            Welcome back to Read-It! The site where you can share reviews of your favourite books
-            with other avid readers. On our site, you can read reviews created by people who have
-            read them independently; no paid reviews will ever be on our site.
-            <br> <br>
-            Check out existing book reviews <a href="#">here,</a> and why not
-            add your own by clicking <a href="#">here?</a>
-        </h4>
-        {% else %}
-        <h6>
-            Welcome to Read-It! The site where you can share reviews of your favourite books
-            with other avid readers. On our site, you can read reviews created by people who have
-            read them independently; no paid reviews will ever be on our site.
-            <br> <br>
-            Feel free to take a look around, and if you like what you see, why not register and share your
-            own reviews? 
+       
+        <p>
+            Hi and Welcome to Lyric Finder!. A site where you can search for your favourite song lyrics
+            with other music fans. On this site, you can view lyrics created by other users or even add your own
             <br> <br>
             <a href="{{ url_for('register') }}" class="underline">Register</a> here!
             Already a member? <a href="{{ url_for('login') }}" class="underline">Log In</a> here!
             <br> <br>
-            Once you're logged in, why not leave a review and share your thoughts with the world!
-        </h6>
-        {% endif %}
+            Feel free to login and add your own lyrics.
+        </p>
+      
     </div>
 </div>
 </div>
