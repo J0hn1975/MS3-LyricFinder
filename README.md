@@ -52,34 +52,37 @@ The primary cusomter goals of this site are:
 ## Scope
 ## User Stories
 As a new or returning visitor I would like to see:
-> 1. A site that is easy and clear to navigate
-> 2. External social media links
-> 3. A site that responds and provides feedback on my interactions
-> 4. A site that I can interact with
-> 5. As a user I would like to see a responsive site that can be used on mobile devices
-> 6. An error page to show if I have enterted an incorrect URL
-> 7. The ability to edit and delete lyrics added by the user
-> 8. A site that has clear login and registration pages
+> 1. A site that is easy and clear to navigate.
+> 2. External social media links.
+> 3. A site that responds and provides feedback on my interactions.
+> 4. A site that I can interact with.
+> 5. As a user I would like to see a responsive site that can be used on mobile devices.
+> 6. An error page to show if I have enterted an incorrect URL.
+> 7. The ability to edit and delete lyrics added by the user.
+> 8. A site that has clear login and registration pages.
 
-## Admin/Site owner goals
-The main goal of this site is to present song lyrics on a website that is easy to navigate
-> 9. A way of contact the site owner with any issues related to the site
-> 10. Present the end user with a clear and simple navigaion menu
-> 11. The ability to add, edit and delete lyrics
-> 12. Provide a quiz where the user can test their knowledge
-> 13. Make a site that is responsive across all devices.
-> 14. A site that provides feedback and validation.
-> 15. On the 404 page the user shouldn't use the broswer back but instead the nav bar.
+## Site owner goals
+The main goal of this site is to present song lyrics on a website that is easy to navigate.
+> 9. A way of contact the site owner with any issues related to the site.
+> 10. Present the end user with a clear and simple navigaion menu.
+> 11. The ability to add, edit and delete lyrics.
+> 12. Make a site that is responsive across all devices.
+> 13. A site that provides feedback and validation.
+> 14. On the 404 page the user shouldn't use the broswer back but instead the nav bar.
 ---
 
 ## Structure
-The website has been structured with 4 web pages. Each page is cleary designed, easy to navigate, and with well layed out information. With a mobile first approach in mind I have used bootstrap throughout to make the site respoinsive on mobile devices.
+The website is made up of 6 web pages. Each page is cleary designed, easy to navigate, and with well layed out information. With a mobile first approach in mind I have used bootstrap throughout to make the site respoinsive on mobile devices.
 
-> The 4 pages are:
-> 1. Home Page: A welcome message, brief description of the island greet the user, as well as a map of where the island is located and the current weather forecast
-> 2. Quiz Page: A 10 question quiz on Santorini, with progess indicators for each question, right and wrong answers are higlighted, with a table at the end showing overall progress
-> 3. Contact Page: A contact page to allow the user to contact the site owner, warnings if the incorrect information has been entered and alert then the form is submitted.
-> 4. 404: This alerts users if they have entered an incorrect URL for the site. The user is presented with warning message, navbar and footer.
+> The 7 pages are:
+> 1. Home Page: A welcome brieft welcome message greets the user, a link for new users to register and a link for existing users to login.
+> 2. Login Page: A page where users can login - with a link to register a new account
+> 3. Register Page: Where new users can register for the first time - with a a link for existing users to login.
+> 4. Lyrics Page: 6 cards have already been added with a selection of lyrics from different musical genres displayed. Also loggeed in users can can add, edit and delete they have added.
+> 5. Profile Page: A profile page that the display the name of the users logged in and a link to add lyrics.
+> 6. New Lyrics Page: A form where a user can add their own lyrics to the site.
+> 7. Manage Genre Page: For admin users only who can add, edit or delate music genres
+> 7. 404: This alerts users if they have entered an incorrect URL for the site. The user is presented with warning message, navbar and footer.
 ---
 
 ## Skeleton
