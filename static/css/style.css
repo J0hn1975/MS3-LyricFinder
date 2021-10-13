@@ -144,6 +144,23 @@ i.fa-minus-circle {
     flex: 1;
 }
 
+/* Error 404 page background image */
+.image-404 {
+    background-image: url("https://previews.123rf.com/images/orson/orson0809/orson080900038/3533363-music-theme-broken-links-with-notes-on-white-background.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 800px;
+  }
+
+/* Error 404 paragraph tags */
+.image-404 p {
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+  }
+  
+
 
 
 
