@@ -7,7 +7,7 @@
 > 1. [Target Audience](#target-audience)
 > 2. [Project Goals](#project-goals)
 > 3. [The 5 Planes of UX](#the-5-planes-of-ux)  
-    3.1 [Stratergy](#stratergy)  
+    3.1 [Strategy](#strategy)  
     3.2 [Scope](#scope)  
           - i [User Stories](#user-stories)   
           - ii  [Site Owner Goals](#site-owner-goals)    
@@ -36,8 +36,8 @@ On this site they will be view existing lyrics, as well as add and edit their ow
 
 
 # The 5 Planes of UX
-## Stratergy
-## Project Goals
+## Strategy
+## Project Goals - Delete?
 ---
 The primary business goals of this site are:
 > * To promote the island of Santorini
@@ -52,30 +52,24 @@ The primary cusomter goals of this site are:
 ## Scope
 ## User Stories
 As a new or returning visitor I would like to see:
-> 1.  A site that is easy and clear to navigate
-> 2.  A map of where Santorini is located
-> 3.  The current weather conditions in Santorini
-> 4.  External social media links to find out more about the island
-> 5.  An informative quiz where I can test my knowledge on Santorini
-> 6.  Feedback on which answers I have got right
-> 7.  A final page that displays how well did on the quiz
-> 8.  An option to close out of the final page or play quiz again
-> 9.  A contact page to get in touch with the site owner
-> 10. A site that responds and provides feedback on my interactions
-> 11. A site that I can interact with
-> 12. As a user I would like to see a responsive site that can be used on mobile devices
-> 13. An error page to show if I have enterted an incorrect URL
+> 1. A site that is easy and clear to navigate
+> 2. External social media links
+> 3. A site that responds and provides feedback on my interactions
+> 4. A site that I can interact with
+> 5. As a user I would like to see a responsive site that can be used on mobile devices
+> 6. An error page to show if I have enterted an incorrect URL
+> 7. The ability to edit and delete lyrics added by the user
+> 8. A site that has clear login and registration pages
 
-## Site owner goals
-The main goal of this site is to present useful information about Santorini on a website that is easy to navigate
-> 14. Display a contact form so the user can get in touch with the site owner
-> 15. Present the end user with a clear and simple navigaion menu
-> 16. Display the current weather in Santorini
-> 17. Provide a quiz where the user can test their knowledge
-> 18. Make a site that is responsive across all devices.
-> 19. A site that provides feedback and validation.
-> 20. On the 404 page the user shouldn't use the broswer back but instead the nav bar.
-> 21. Display a map of Santorini
+## Admin/Site owner goals
+The main goal of this site is to present song lyrics on a website that is easy to navigate
+> 9. A way of contact the site owner with any issues related to the site
+> 10. Present the end user with a clear and simple navigaion menu
+> 11. The ability to add, edit and delete lyrics
+> 12. Provide a quiz where the user can test their knowledge
+> 13. Make a site that is responsive across all devices.
+> 14. A site that provides feedback and validation.
+> 15. On the 404 page the user shouldn't use the broswer back but instead the nav bar.
 ---
 
 ## Structure
