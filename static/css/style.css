@@ -6,7 +6,9 @@
 * {
     margin: 0px;
     padding: 0px;
+    
 }
+
 
 
 
@@ -27,8 +29,16 @@ h5 {
     text-align: center;
 }
 
+h4 {
+    font-size: 3rem;
+    line-height: 447%;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    text-align: center;
+}
+
 .text-shadow {
-    text-shadow: 2px 2px 2px rgba(0, 0, 0);
+    text-shadow: 2px 2px 2px #e1f5fe;
 }
 
 .flashes h4 {
@@ -128,9 +138,7 @@ i.fa-minus-circle {
 
 
 
-.main {
-    flex: 1 0 auto;
-}
+
 
 .content {
     flex: 1;
