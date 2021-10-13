@@ -1,13 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h3 class="light-blue-text text-darken-4 center-align">404 Page</h3>
-
-<div class="image-404">
-    <p>Error 404</p>
-     <p>Hmmm...no lyrics hiding here</p>
+  <!-- 404 page -->
+  <div class="error"></div>
+    <div class="row">
+      <div class="col s12 center-align top-margin-error bottom-margins">
+        <p class="page_not_found">Whoops! A 404 error occurred.</p>
+        <P class="error_massage">The page you are looking for could not be found!</p>
+        <p class="redirect">Please go back to the homepage of</p>
+        <a href="{{ url_for('home') }}" class="btn-large btn-red">Home</a>
       </div>
-
-
+    </div>
+</div>
 
 {% endblock %}
