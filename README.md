@@ -91,7 +91,8 @@ The website is made up of 6 web pages. Each page is cleary designed, easy to nav
 To design and develop the wireframes I first used Balsamiq, then used Snipping Tools to create PNG versions. The wireframes images are designed to collaspe.
 
 ## Wireframes
-## Desktop
+>
+### Desktop
 > <details><summary>Log In</summary>
 > <img src="https://github.com/J0hn1975/MS3-LyricFinder/blob/main/docs/Wireframes/Desktop/Log%20In.PNG">
 ></details>
@@ -120,7 +121,7 @@ To design and develop the wireframes I first used Balsamiq, then used Snipping T
 > <img src="https://github.com/J0hn1975/MS3-LyricFinder/blob/main/docs/Wireframes/Desktop/Manage_Genres.PNG">
 > </details>
 >
-## Mobile
+### Mobile
 > <details><summary>Log In</summary>
 > <img src="https://github.com/J0hn1975/MS3-LyricFinder/blob/main/docs/Wireframes/Mobile/Log%20In.PNG">
 ></details>
@@ -152,14 +153,14 @@ To design and develop the wireframes I first used Balsamiq, then used Snipping T
 ---
 
 ## Surface
-## Colours
+## Colours - Change for MS3
 Each page is design with very simple colours and images to showcase the island. The colours I have used are as follows:
 > - #FFCC51 - used as a background color for the footer and navbar
 > - #050505 - used for the site brand and nav links
 > - #009688 - used to style the quiz text.
 
 ## Typography
-For the most part of I have used the Titilium Web Google font, with a fallback of Sans Serif should Titilium Web not work.
+For the brand logo I have used Google Font - Lobster, and for the Lyrics (flow-test) I have used Google Font - Roboto Condensed. Everywhere else I have used the default Materialize font.
 
 ## Imagery
 Througout the site I have used clear images showcasing Santorini's natural beauty.
