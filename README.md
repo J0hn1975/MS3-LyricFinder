@@ -13,7 +13,9 @@
           - ii  [Site Owner Goals](#site-owner-goals)    
     3.3 [Structure](#structure)  
     3.4 [Skeleton](#skeleton)  
-          - i [Wireframes](#wireframes)   
+          - i [Wireframes](#wireframes)
+          - ii [Desktop](#desktop)
+          - iii [Mobile](#mobile)
     3.5 [Surface](#surface)  
           - i [Colours](#colours)  
           - ii [Typography](#typography)  
@@ -89,17 +91,64 @@ The website is made up of 6 web pages. Each page is cleary designed, easy to nav
 To design and develop the wireframes I first used Balsamiq, then used Snipping Tools to create PNG versions. The wireframes images are designed to collaspe.
 
 ## Wireframes
-> <details><summary>Home Page</summary>
-> <img src="https://github.com/J0hn1975/MS2-Santorini/blob/main/docs/Wireframes/Home/Home.PNG">
+## Desktop
+> <details><summary>Log In</summary>
+> <img src="https://github.com/J0hn1975/MS3-LyricFinder/blob/main/docs/Wireframes/Desktop/Log%20In.PNG">
 ></details>
 >
-> <details><summary>Quiz Page</summary>
-> <img src="https://github.com/J0hn1975/MS2-Santorini/blob/main/docs/Wireframes/Quiz/Quiz.PNG">
+> <details><summary>Home Page</summary>
+> <img src="https://github.com/J0hn1975/MS3-LyricFinder/blob/main/docs/Wireframes/Desktop/Home.PNG">
 > </details>
 > 
-> <details><summary>Contact Page</summary>
-> <img src="https://github.com/J0hn1975/MS2-Santorini/blob/main/docs/Wireframes/Contact/Contact.PNG">
+> <details><summary>Lyrics Page</summary>
+> <img src="https://github.com/J0hn1975/MS3-LyricFinder/blob/main/docs/Wireframes/Desktop/Lyrics.PNG">
 > </details>
+>
+> <details><summary>Profile Page</summary>
+> <img src="https://github.com/J0hn1975/MS3-LyricFinder/blob/main/docs/Wireframes/Desktop/Profile.PNG">
+> </details>
+>
+> <details><summary>New Lyrics</summary>
+> <img src="https://github.com/J0hn1975/MS3-LyricFinder/blob/main/docs/Wireframes/Desktop/New_Lyrics.PNG">
+> </details>
+>
+> <details><summary>Manage Genres</summary>
+> <img src="https://github.com/J0hn1975/MS3-LyricFinder/blob/main/docs/Wireframes/Desktop/Manage_Genres.PNG">
+> </details>
+>
+> <details><summary>Log Out</summary>
+> <img src="https://github.com/J0hn1975/MS3-LyricFinder/blob/main/docs/Wireframes/Desktop/Manage_Genres.PNG">
+> </details>
+>
+## Mobile
+> <details><summary>Log In</summary>
+> <img src="https://github.com/J0hn1975/MS3-LyricFinder/blob/main/docs/Wireframes/Mobile/Log%20In.PNG">
+></details>
+>
+> <details><summary>Home Page</summary>
+> <img src="https://github.com/J0hn1975/MS3-LyricFinder/blob/main/docs/Wireframes/Mobile/Home.PNG">
+> </details>
+> 
+> <details><summary>Lyrics Page</summary>
+> <img src="https://github.com/J0hn1975/MS3-LyricFinder/blob/main/docs/Wireframes/Mobile/Lyrics.PNG">
+> </details>
+>
+> <details><summary>Profile Page</summary>
+> <img src="https://github.com/J0hn1975/MS3-LyricFinder/blob/main/docs/Wireframes/Mobile/Profile.PNG">
+> </details>
+>
+> <details><summary>New Lyrics</summary>
+> <img src="https://github.com/J0hn1975/MS3-LyricFinder/blob/main/docs/Wireframes/Mobile/New_Lyrics.PNG">
+> </details>
+>
+> <details><summary>Manage Genres</summary>
+> <img src="https://github.com/J0hn1975/MS3-LyricFinder/blob/main/docs/Wireframes/Mobile/Manage_Genres.PNG">
+> </details>
+>
+> <details><summary>Log Out</summary>
+> <img src="https://github.com/J0hn1975/MS3-LyricFinder/blob/main/docs/Wireframes/Desktop/Manage_Genres.PNG">
+> </details>
+
 ---
 
 ## Surface
