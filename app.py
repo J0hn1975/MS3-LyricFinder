@@ -29,7 +29,7 @@ def home():
 
 
 @app.route("/")
-@app.route("/get_lyrics")
+@app.route("/lyrics")
 def get_lyrics():
     lyric = list(mongo.db.lyrics.find())
     return render_template("lyrics.html", lyric=lyric)
