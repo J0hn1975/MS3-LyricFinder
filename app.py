@@ -169,7 +169,7 @@ def get_genres():
     return render_template("genres.html", genre=genre)
 
 
-@app.route("/add_", methods=["GET", "POST"])
+@app.route("/add_genre", methods=["GET", "POST"])
 def add_genres():
     if request.method == "POST":
         genre = {
