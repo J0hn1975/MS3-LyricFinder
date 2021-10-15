@@ -1,6 +1,3 @@
-$(document).ready(function(){
-    $(".sidenav").sidenav({edge: "right"});
-    $('select').formSelect();
     $(document).ready(function () {
       $(".sidenav").sidenav({edge: "right"});
       $(".collapsible").collapsible();
@@ -46,6 +43,5 @@ $(document).ready(function(){
   });
   
   
-  });
-
   
+
