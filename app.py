@@ -163,7 +163,7 @@ def delete_lyrics(lyrics_id):
     return redirect(url_for("get_lyrics"))
 
 
-@app.route("/get_genre")
+@app.route("/genres")
 def get_genres():
     genre = list(mongo.db.genre.find().sort("music_genre", 1))
     return render_template("genres.html", genre=genre)
