@@ -1,28 +1,28 @@
 {% extends "base.html" %}
 {% block content %}
 
+<!-- Main heading for page -->
 <h3 class="light-blue-text text-darken-4 center-align">Add Genre</h3>
-
+<!-- Main card panel-->
 <div class="row card-panel grey lighten-5">
+   <!-- Materialize form -->
    <form class="col s12" method="POST" action="{{ url_for('add_genres') }}">
       <div class="row">
          <div class="input-field col s12">
             <i class="fas fa-signature prefix light-blue-text text-darken-4"></i>
-            <input id="music_genre" name="music_genre" minlength="3" maxlength="100" type="text" class="validate" required/>
-            <label for="music_genre">Music Genre</label>                        
+            <input id="music_genre" name="music_genre" minlength="3" maxlength="100" type="text" class="validate" required />
+            <label for="music_genre">Music Genre</label>
          </div>
       </div>
+      <!-- Button container -->
       <div class="row">
          <div class="col s12 center-align">
             <button type="submit" class="btn-large light-blue darken-1 text-shadow">Add Genre <i class="fas fa-plus-square right"></i></button>
          </div>
       </div>
    </form>
-   </div>
-
+</div>
+<!-- Message for admin users only -->
 <h4>As an admin users you can add new genres</h4>
-
-   
-
 
 {% endblock %}
