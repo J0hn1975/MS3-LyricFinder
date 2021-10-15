@@ -1,52 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
-
+/*............................................Special headings*/
+/* Reset default margin and padding */
 * {
     margin: 0px;
     padding: 0px;
-    
 }
 
+/* Text shadow for fonts */
+.text-shadow {
+    text-shadow: 2px 2px 2px #e1f5fe;
+}
 
+/* Change font of brand logo */
+.brand-logo {
+    font-family: 'Lobster', cursive;
+    margin-left: 10px;
+}
 
+/* Style headings for flash messages */
+.flashes h4 {
+    line-height: 2;
+}
 
-
-
+/* Style paragraph text */
 p {
     font-size: 15px;
     text-align: center;
 }
 
-
-
-.page_not_found {
-    margin-top: 100px;
-    line-height:100%;
-    font-size: 3rem;
-    margin-bottom: 40px;
-}
-
-.error_massage {
-    line-height:223%;
-    font-size: 3rem;
-}
-
-.redirect {
-    line-height:225%;
-    font-size: 3rem;
-    margin-bottom: 91px;
-}
-
-.btn-large {
-    margin-bottom: 91px;
-}
-
+/* Headings for social icons and lyrics */
 h5 {
     text-decoration: underline;
     text-align: center;
 }
 
+/* Headings for admin messages*/
 h4 {
     font-size: 3rem;
     line-height: 424%;
@@ -55,175 +45,96 @@ h4 {
     text-align: center;
 }
 
-.text-shadow {
-    text-shadow: 2px 2px 2px #e1f5fe;
-}
-
-.flashes h4 {
-    line-height: 2;
-}
-
+/* Style p class for register */
 #register {
     font-size: 25px;
     line-height: 320%;
     margin-bottom: 2px;
 }
 
-
-.brand-logo {
-    font-family: 'Lobster', cursive;
-    margin-left: 10px;
+/*............................................Error 404 Page*/
+/* Style 404 page */
+.page_not_found {
+    margin-top: 100px;
+    line-height:100%;
+    font-size: 3rem;
+    margin-bottom: 40px;
 }
 
-.btn-small {
-    margin-top: 30px;
+/* Error 404 message */
+.error_message {
+    line-height:223%;
+    font-size: 3rem;
 }
 
-.sidenav {
-    position: fixed;
-    width: 320px;
+/* Redirect to Home Page */
+.redirect {
+    line-height:225%;
+    font-size: 3rem;
+    margin-bottom: 91px;
 }
 
+/*............................................Lyrics Page*/
+/* Style flow text for lyrics */
 .flow-text {
     font-size: 18px;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 600;
     word-spacing: 2px;
-
 }
 
+/* Main card title */
 .card .card-title {
     font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
     font-size: 18px;
-   
-    
-    
 }
 
+/* Card content paragraphs */
 .card .card-content p {
     color: white;
     font-size: 18px;
-    
 }
 
+/* Sub headings for cards */
 .card-subtitles {
     border-radius: 5px;
 }
 
+/* To style card images */
 .card .card-image img {
     width: 85%;
     margin: auto;
     border-radius: 5px;
     height: 300px;
-    
 }
 
+/* Fontawesome icon height */
 .card .card-content .card-title i,
 .card .card-reveal .card-title i {
     line-height: 32px;
-
-
-
 }
 
+/*............................................Buttons*/
+/* Large button */
+.btn-large {
+    margin-bottom: 91px;
+}
+
+/*............................................Social Icons*/
+/* Style social links container */
 .social-links li {
     display: inline-block;
     margin-right: 10px;
     font-size: 25px;
 }
 
-
-
+/* Font awesome plus circle */
 i.fa-plus-circle {
     color: green;
 }
 
+/* Font awesome minus circle */
 i.fa-minus-circle {
     color: red;
 }
-
-.parallax-container {
-   
-    height: 400px;
-    min-width: 1925px;
-    right: 26.1%;
-    
-    
-}
-
-
-
-
-
-.parallax-lower {
-    margin-top: 35px;
-}
-
-
-
-
-
-
-.content {
-    flex: 1;
-}
-
-/* Error 404 page background image */
-.image-404 {
-    background-image: url("https://previews.123rf.com/images/orson/orson0809/orson080900038/3533363-music-theme-broken-links-with-notes-on-white-background.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 800px;
-  }
-
-/* Error 404 paragraph tags */
-.image-404 p {
-    color: #ffffff;
-    font-size: 40px;
-    text-align: center;
-  }
-  
-
-
-
-
-.tracking-in-expand {
-	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-}
-
-@-webkit-keyframes tracking-in-expand {
-    0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @keyframes tracking-in-expand {
-    0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  
-  
-
-
-
-
-
-
