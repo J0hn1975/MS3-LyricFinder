@@ -29,7 +29,7 @@ def home():
 
 
 @app.route("/")
-@app.route("/lyrics")
+@app.route("/get_lyrics")
 def get_lyrics():
     lyric = list(mongo.db.lyrics.find())
     return render_template("lyrics.html", lyric=lyric)
@@ -163,8 +163,8 @@ def delete_lyrics(lyrics_id):
     return redirect(url_for("get_lyrics"))
 
 
-@app.route("/genres")
-def genres():
+@app.route("/get_genre")
+def get_genres():
     genre = list(mongo.db.genre.find().sort("music_genre", 1))
     return render_template("genres.html", genre=genre)
 
@@ -177,7 +177,7 @@ def add_genres():
         }
         mongo.db.genre.insert_one(genre)
         flash("New Genre Added")
-        return redirect(url_for("genres"))
+        return redirect(url_for("get_genres"))
 
     return render_template("add_genre.html")
 
@@ -190,7 +190,7 @@ def edit_genre(genre_id):
         }
         mongo.db.genre.update({"_id": ObjectId(genre_id)}, submit)
         flash("Genre Successfully Updated")
-        return redirect(url_for("genres"))
+        return redirect(url_for("get_genres"))
 
     genre = mongo.db.genre.find_one({"_id": ObjectId(genre_id)})
     return render_template("edit_genre.html", genre=genre)
@@ -200,7 +200,7 @@ def edit_genre(genre_id):
 def delete_genre(genre_id):
     mongo.db.genre.remove({"_id": ObjectId(genre_id)})
     flash("Genre Successfully Deleted")
-    return redirect(url_for("genres"))
+    return redirect(url_for("get_genres"))
 
 
 if __name__ == "__main__":
