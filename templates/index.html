@@ -1,39 +1,23 @@
 {% extends "base.html" %}
 {% block content %}
-
-<div class="container-fluid">
-<div class="parallax-container">
-    <div class="parallax">
-        <img src="https://motionarray.imgix.net/preview-204862-aYTxozfB5i-high_0000.jpg" alt="">
-    </div>
-</div>
-
+    
 <div class="row container">
     <div class="col s12">
-        <div class="tracking-in-expand center-align">
-            <h3>Welcome to Lyric Finder</h3>
-       
-        <p>
-            Hi and Welcome to Lyric Finder!. A site where you can search for your favourite song lyrics
-            with other music fans. On this site, you can view lyrics created by other users or even add your own
-            <br> <br>
-            <a href="{{ url_for('register') }}" class="underline">Register</a> here!
-            Already a member? <a href="{{ url_for('login') }}" class="underline">Log In</a> here!
-            <br> <br>
-            Feel free to login and add your own lyrics.
-        </p>
-      
+       <!-- Tracking in text effect-->
+       <div class="tracking-in-expand center-align">
+          <!-- Main heading for page -->
+          <h3>Welcome to Lyric Finder</h3>
+          <!-- Wecolme message -->
+          <p>
+             Hi and Welcome to Lyric Finder!. A site where you can search for your favourite song lyrics with other music fans. On this site, you can view lyrics created by other users or even add your own
+             <br />
+             <br />
+             <a href="{{ url_for('register') }}" class="underline">Register</a> here! Already a member? <a href="{{ url_for('login') }}" class="underline">Log In</a> here! <br />
+             <br />
+             Feel free to login and add your own lyrics.
+          </p>
+       </div>
     </div>
-</div>
-</div>
-
-<!-- Bottom Parallax Image -->
-<div class="parallax-container parallax-lower">
-    <div class="parallax">
-        <img src="https://i.pinimg.com/originals/24/2b/4f/242b4f66b6d14b8a331c6e4289fe2ef5.jpg" alt="Books on library shelves">
-    </div>
-</div>
-</div>
-
+ </div>
 
 {% endblock %}
