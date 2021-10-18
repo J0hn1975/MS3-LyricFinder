@@ -528,9 +528,24 @@ Clone site locally
 
 ---
 
-# Credits - Update for MS3
-> * Quiz and JS credited to The Webshala - https://www.youtube.com/watch?v=J8QbjXdVl9c
-> * Contact form and validation JS credited to Coding Market https://www.youtube.com/watch?v=WY4rvU4ImgE
+### Credits
+## Images
+> * Stone Roses image credited to Pinterest.com - https://i.pinimg.com/originals/17/e6/21/17e6212ef5b95530f2408332959b99f7.jpg
+> * The Charlatans image credited to Exeter Phoenix - https://exeterphoenix.org.uk/wp-content/uploads/2021/06/the-charlatans-exeter-phoenix-great-hall.jpg
+> * Queens of the Stone Age (QOTSA) image credited to Mesa Press - https://www.mesapress.com/wp-content/uploads/2017/09/Villains-QOTSA.png
+> * James Brown image credited to Wallpapercave.com - https://wallpapercave.com/wp/wp2160960.jpg
+> * AC/DC image credited to Billboard.com - https://static.billboard.com/files/media/acdc-back-in-black-album-cover-650-compressed.jpg - Billboard
+> * Jamiroquai image credited to Genius.com - http://images.genius.com/2d828c0c76c979c0c83ce0beb842282c.500x500x1.jpg
+
+## Lyrics
+> * Lyrics to Stone Roses' Waterfall credited to Music Match
+> * Lyrics to The Charlatans Crashin' In credited to Song Lyrics
+> * Lyrics to Queens of the Stone Age's (QOTSA) No One Knows credited to Music Match
+> * Lyrics to James Brown's Super Bad credited to Lyric Find
+> * Lyrics to AC/DC's Back in Black credited to Music Match
+
+
+
 
 # Acknowledgements
 > * Mo Shami for his external patience and guidance
