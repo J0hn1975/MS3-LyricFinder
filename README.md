@@ -275,27 +275,28 @@ I have used PEP8 Online to check of my Ptyhon code is valid or not.
 |:------------:|:--------:|:-------------------------------------------------:|
 |    app.py    | 0 errors | [View Results](docs/Validation/Python/app.py.PNG) |
 
-
-
-
-### WAVE Accessibilty
+### WAVE Accessibilty - Does this need to be done for MS3?
 I have used the WAVE Web Accessibilty Evaluation Tool to ensure site is accessible
 
 |   Page  |            Result           | Screenshot |
 |:-------:|:---------------------------:|:----------:                                                                 
-|   Home  | 0 errors, 0 contrast errors | [View results](/docs/WAVE-Accessibilty/index.html_Wave_Validation.PNG)      |
-|   Quiz  | 0 errors, 0 contrast errors | [View results](/docs/WAVE-Accessibilty/quiz.html_Wave_Validation.PNG)       |
-| Contact | 0 errors, 0 contrast errors | [View results](assets/docs/WAVE-Accessibilty/quiz.html_Wave_Validation.PNG) |
+|   Home    | 0 errors, 0 contrast errors | [View results](/docs/WAVE-Accessibilty/index.html_Wave_Validation.PNG)      |
+|   Lyrics  | 0 errors, 0 contrast errors | [View results](/docs/WAVE-Accessibilty/quiz.html_Wave_Validation.PNG)       |
+|   Profile | 0 errors, 0 contrast errors | [View results](assets/docs/WAVE-Accessibilty/quiz.html_Wave_Validation.PNG) |
+| New Lyrics | 0 errors, 0 contrast errors | [View results](assets/docs/WAVE-Accessibilty/quiz.html_Wave_Validation.PNG) |
+| Manage Genres | 0 errors, 0 contrast errors | [View results](assets/docs/WAVE-Accessibilty/quiz.html_Wave_Validation.PNG) |
+| Log In | 0 errors, 0 contrast errors | [View results](assets/docs/WAVE-Accessibilty/quiz.html_Wave_Validation.PNG) |
+
 --- 
 
-### Lighthouse Performance
+### Lighthouse Performance - Does this need to be done for MS3?
 I have used Google Lighthouse (in Google Dev tools) to measure the performance the site
 
-|       Page        |                            Result                            |                        Screenshot                        |
-| :---------------: | :----------------------------------------------------------: | :------------------------------------------------------: |
-|  Home (Desktop)   | 97 Performance, 95 Accessibility, 87 Best Practices, 100 SEO |  [View Results](docs/Lighthouse/Desktop/index.html.PNG)  |
-|  Quiz (Desktop)   | 99 Performance, 96 Accessibility, 93 Best Practices, 100 SEO |  [View Results](docs/Lighthouse/Desktop/quiz.html.PNG)   |
-| Contact (Desktop) | 99 Performance, 96 Accessibility, 93 Best Practices, 100 SEO | [View Results](docs/Lighthouse/Desktop/contact.html.PNG) |
+|       Page           |                            Result                            |                        Screenshot                        |
+| :------------------: | :----------------------------------------------------------: | :------------------------------------------------------: |
+|  Home (Desktop)      | 97 Performance, 95 Accessibility, 87 Best Practices, 100 SEO |  [View Results](docs/Lighthouse/Desktop/index.html.PNG)  |
+|  Lyrics (Desktop)    | 99 Performance, 96 Accessibility, 93 Best Practices, 100 SEO |  [View Results](docs/Lighthouse/Desktop/quiz.html.PNG)   |
+| New Lyrics (Desktop) | 99 Performance, 96 Accessibility, 93 Best Practices, 100 SEO | [View Results](docs/Lighthouse/Desktop/contact.html.PNG) |
 |   Home (Mobile)   | 77 Performance, 97 Accessibility, 87 Best Practices, 100 SEO |  [View Results](docs/Lighthouse/Mobile/index.html.PNG)   |
 |   Quiz (Mobile)   | 84 Performance, 97 Accessibility, 93 Best Practices, 100 SEO |   [View Results](docs/Lighthouse/Mobile/quiz.html.PNG)   |
 | Contact (Mobile)  | 88 Performance, 97 Accessibility, 93 Best Practices, 100 SEO | [View Results](docs/Lighthouse/Mobile/contact.html.PNG)  |
@@ -329,7 +330,7 @@ Overall results:
 > * Google Chrome - All nav links, features and website work as expected
 > * Firefox Developer Edition - All nav links, features and website work as expected
 
-### User story tests
+### User story tests - Does this need to be done for MS3?
 > 1. A site that is easy and clear to navigate
 
 |                    Feature                    |             Test Steps             |           Expected            |       Actual       |
@@ -499,7 +500,7 @@ Overall results:
 
 ---
 
-# Bugs
+# Bugs - Update for MS£3
 > **Bug** Contact form initially didn't push down when using mobile nav  
 > **Fix** Changed **poistion: absolute;** to **postion: relative**. Changed **top:50%** to **top:25%**. Changed **transform: translate(-50%,50%);** to **transform: translate(-50%,25%);**
 >
@@ -509,7 +510,7 @@ Overall results:
 > **Bug** Content map, heading-left doesn't push down on mobile nav  
 > **Fix** Changed **position : absolute;** to **position: relative;** on .hero-text CSS class  
 
-# Deployment
+# Deployment - Update for MS3
 
 I have deployed this site to GitHub pages
 
