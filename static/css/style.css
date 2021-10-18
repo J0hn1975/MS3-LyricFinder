@@ -8,7 +8,6 @@
     padding: 0px;
 }
 
-
 .bg {
     /* The image used */
     background-image: url("https://dm0qx8t0i9gc9.cloudfront.net/watermarks/image/rDtN98Qoishumwih/grey-musical-node-in-musical-keyboard-background_SB_PM.jpg");
@@ -65,6 +64,10 @@ h4 {
     font-size: 25px;
     line-height: 320%;
     margin-bottom: 2px;
+}
+
+a {
+    color: #035882 !important;
 }
 
 /*............................................Error 404 Page*/
