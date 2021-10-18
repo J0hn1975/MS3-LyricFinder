@@ -38,9 +38,7 @@
          </nav>
          <!-- mobile sidenav -->
          <ul class="sidenav" id="mobile-demo">
-            <li>
-               <h4 class="center-align light-blue-text text-darken-4">Lyric Finder</h4>
-            </li>
+            <a href="{{ url_for('home') }}" class="brand-logo">Lyric Finder</a>
             <li><a href="{{ url_for('home') }}">Home</a></li>
             <li><a href="{{ url_for('get_lyrics') }}">Lyrics</a></li>
             {% if session.user %}
