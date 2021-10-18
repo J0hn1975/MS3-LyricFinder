@@ -1,4 +1,4 @@
-# Santorini
+# Lyric Fnder
 ![Responsive Mockup](docs/Mockups/AmIResponsive.PNG)
 
 [You can visit the live site here](https://j0hn1975.github.io/MS2-Santorini/)
@@ -19,7 +19,7 @@
     3.5 [Surface](#surface)  
           - i [Colours](#colours)  
           - ii [Typography](#typography)  
-          - iii [Imagery](#imagery)
+          - iii [Database](#database)
 > 4. [Features](#features)  
 > 5. [Technolgies Used](#technolgies-used)
 > 6. [Testing](#testing)  
@@ -162,12 +162,13 @@ Each page is design with very simple colours and images to showcase the island. 
 ## Typography
 For the brand logo I have used Google Font - Lobster, and for the Lyrics (flow-test) I have used Google Font - Roboto Condensed. Everywhere else I have used the default Materialize font.
 
-## Imagery
-Througout the site I have used clear images showcasing Santorini's natural beauty.
+## Database
+> For the database I have useed MongoDB. The database is made up of 3 collections;
+-     Genre
+-     Lyrics
+-     Users
 
-## Design
-> The site is made up of three pages, using a simple and clean design. 
-> 
+
 
 # Features
 ## Existing Features
