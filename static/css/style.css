@@ -176,3 +176,13 @@ i.fa-minus-circle {
     height:1px;
     overflow:hidden;
   }
+
+
+/*............................................Media Queries*/
+/* Change font sixe of mobile brand logo */
+@media only screen and (max-width: 992px) {
+    .sidenav>a {
+        padding: 0 16px;
+        font-size: 24px;
+    }
+}
