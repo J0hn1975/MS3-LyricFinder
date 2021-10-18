@@ -1,7 +1,7 @@
 # Lyric Fnder
 ![Responsive Mockup](docs/Mockups/AmIResponsive.PNG)
 
-[You can visit the live site here](https://j0hn1975.github.io/MS2-Santorini/)
+[You can visit the live site here](https://lyric-finder-jw.herokuapp.com/)
 
 ## Table of Contents
 > 1. [Target Audience](#target-audience)
