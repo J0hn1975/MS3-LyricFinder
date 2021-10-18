@@ -232,8 +232,7 @@ The usernames and password are stored in the database as this allows the users t
 > * HTML5
 > * CSS3
 > * Javascript
-> * Google Maps Api
-> * Weather Widget
+> * MongoDB
 > * Balsamiq
 
 ## Testing
@@ -309,21 +308,16 @@ The site has been tested on the following physical devices
 > - Samsung Galaxy A31
 
 Actual tests:
-> 1. Home, Quiz, Contact nav links all go to the correct pages. Clicking the Santorini brand logo navigates back to the Home page from each page.
-> 2. The nav collaspses to a burger menu, which pushes the content down when clicked on. All nav links work as expected here too.
-> 3. The weather widget on the home page is responsive and when clicked on goes to the Forecast7.com website as expected.
-> 4. The map of Santorini has a location pin showing its location on the island.
-> 5. The text and images are clearly displayed.
-> 6. Contact page does not allow user to move forward until all fields are completed. Error messages display if a field has not been filled out.
-> 7. All pages are responsive.
-> 8. The quiz page on mobile displays clearly. The correct and incorrect answers are easy to see.
-> 9. The desription of the island does not display on mobiles, as it makes the Home page too cluttered.
-> 10. Each nav link and logo brand text color change to white when clicked on.
-> 11. A 404 error page will be displayed in the event of a incorrect URL being entered. The standard nav can be used to navigate back to the site pages.
-> 12. The two social links both go to Youtube and Tripadvisor respectively, both open in separate pages.
-
+> 1. Home, Lryics, Profile, New Lyrics, Manage Genres nav links all go to the correct pages. Clicking the Lyric Finder brand logo navigates back to the Home page from each page.
+> 2. On a mobile device the nav bar collapses to a hamburger button. When clicked a sidenav appears, all links work here too and the Lyric Finder brand logo navigates to home when clicked.
+> 3. The search function on the Lyrics pages return results on lyrics, artist name, music genre, composer as intended. A flash message appears if no results can be found. The reset button clears search results.
+> 4. The text and images are all clearly displayed.
+> 5. All pages are responsive.
+> 6. When clicking on each page the nav bar hover colour changes.
+> 7. A 404 error page will be displayed in the event of a incorrect URL being entered. The standard nav can be used to navigate back to the site pages.
+> 8. The three social links for Facebook, Instgram and Twitter all navigate to respective sites home pages and also open in a new tab.
 Overall results:
-> * The above physical tests passed on each device they were tested on. On the mobile version of Chrome however, the Aladin font used on the hero text falls back to cursive.
+> * The above physical tests passed on each device they were tested on.
 
 ### Browser Tests
 > * Firefox Developer Edition - All nav links, features and website work as expected
@@ -534,7 +528,7 @@ Clone site locally
 
 ---
 
-# Credits
+# Credits - Update for MS3
 > * Quiz and JS credited to The Webshala - https://www.youtube.com/watch?v=J8QbjXdVl9c
 > * Contact form and validation JS credited to Coding Market https://www.youtube.com/watch?v=WY4rvU4ImgE
 
