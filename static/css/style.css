@@ -108,7 +108,6 @@ h4 {
 
 /* Card content paragraphs */
 .card .card-content p {
-    color: white;
     font-size: 18px;
 }
 
@@ -129,6 +128,18 @@ h4 {
 .card .card-content .card-title i,
 .card .card-reveal .card-title i {
     line-height: 32px;
+}
+
+.input-field>label {
+    color: black !important;
+}
+
+.red {
+    background-color: #9A1509 !important;
+}
+
+.light-blue {
+    background-color: #045A86 !important;
 }
 
 /*............................................Buttons*/
