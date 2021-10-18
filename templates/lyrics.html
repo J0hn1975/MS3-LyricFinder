@@ -13,7 +13,7 @@
                   <div class="input-field col s12">
                      <i class="fas fa-search prefix light-blue-text"></i>
                      <input type="text" name="query" id="query" minlength="3" class="validate" required />
-                     <label for="query">Search Lyrics</label>
+                     <label for="query">Search Lyrics, Artist Name, Music Genre or Composer</label>
                   </div>
                </div>
                <!-- reset and search buttons -->
@@ -28,8 +28,6 @@
       </div>
    </div>
 </div>
-
-
 <!-- Main Content-->
 {% if lyric|length > 0 %}
    
@@ -67,10 +65,8 @@
       </div>
       {% endfor %}   
    </div>
-  
       {% else %}
         <!-- Text To Display If No Reviews Found -->
         <h3 class="red-text center-align">No Search Results Found</h3>
    {% endif %}
-
 {% endblock %}
