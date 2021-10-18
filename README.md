@@ -168,90 +168,64 @@ For the brand logo I have used Google Font - Lobster, and for the Lyrics (flow-t
 -     Lyrics
 -     Users
 
+### Genre
 
+I have stored the different style of music using the 'genre' keyword, as this allow the user to select musical genres from a select dropdown list. 
+
+![Genre DB Image](docs/database/genre.PNG)
+
+### Lyrics
+
+Any lyrics that the user adds through the application will be stored in the database, this data can will be pulled from the database and displayed on the Lyrics page.
+
+![Lyrics DB Image](docs/database/lyrics.PNG)
+
+### Users
+
+The usernames and password are stored in the database as this allows the users to log in/log out securely.
+
+![Users DB Image](docs/database/users.PNG)
 
 # Features
 ## Existing Features
-### Feature 1: The Nav Bar
-A boostrap and fully responsive nav bar, that has links to Home, Quiz and Contact pages. As part of it bootstrap functionality the nav bar displays as a burger menu on mobile devices. 
-> ![Navbar](docs/Features/navbar.PNG)
-> ![MobileNav](docs/Features/navbar_mobile.PNG)  
-> User stories feature relates to:
-> * 1.1 A site that is easy and clear to navigate
-> * 1.12 As a user I would like to see a responsive site that can be used on mobile devices
-> * 1.15 Present the end user with a clear and simple navigaion menu
+### Features found throughout the site
+- The site is fully responsive on all screen sizes.
+- Nav and footer present and consistent on all pages. The footer is designed to stay at the bottom of each page regardless of content.
+- Each page has its own custom header relevant to the content on the page.
+- Flash messages are displayed when the user performs and action such as logging out or addding lyrics to the site etc.
 
-### Feature 2: Weather Widget API
-Weather Widget display the current weather for Santorini on the Home Page. When the widget is clicked it takes you to the Forcast7.com website for a more detailed forecast.
-> ![Weather Widget](docs/Features/weatherwidget.PNG)
-> 24hr Forecast  
-> ![Weather Widget 24hr](docs/Features/weather24.PNG)  
-> 7 Day Forecast  
-> ![Weather Widget 7Day](docs/Features/weather7days.PNG)  
-> User stories feature realtes to:  
-> * 2.3 The current weather conditions in Santorini
-> * 2.13 Display the current weather in Santorini
+### Home Page
+- The homepage consists of a background image with a musical theme in keeping with the sites overall subject.
+- An introductory message is also displayed to greet the user.
 
-### Feature 3: Google Maps API
-Google maps API to that shows the exact location of Sanitorini.
-> ![Google Maps API](docs/Features/map.PNG)  
-> User stories feature relates to:
-> * 3.2 A map of where Santorini is located
-> * 3.18 Display a map of Santorini
+### Lyrics Page
+- A search bar is present at the very top of the page allowing users to search existing lyrics.
+- To dislay the lyrics I have used Materialize card classes with each card being the same size. The front side of the card shows a picture of the band, artist name, music genre, composer and the user the lyrics were added by. Clicking on the fontawesome plus button reveals the song title and also the lyrics of the song.
+- There are two button present (only visible to admins or the user who has added the lyrics) to delete and or edit the lyrics.
 
-### Feature 4: Footer
-Footer that displays the site name and two social links; one to youtube and one to Tripadvisor
-> ![Footer](docs/Features/footer.PNG)  
-> User stories feature relates to:
-> * 4.4 External social media links to find out more about the island
+### Profile Page
+- The profile page displays the current users name and Materilize card with a link on it to add lyrics.
 
-### Feature 5: Home Page
-Home page that displays a welcome message and short description of the island. A nav bar, footer, google map and weather forecast are displayed to
-> ![Home Page](docs/Features/homepage.PNG)  
-> USer stories this feature relates to:
-> * 5.1 A site that is easy and clear to navigate
-> * 5.3 The current weather conditions in Santorini
+### New Lyrics Page
+- A form is diplayed made up of 6 input field; Choose Genre (a select dropdown list), artist name, song title, song lyrics, song composer and add album artwork.
+- Each input field is a required element, with form validation not allowing the users to skip a field without first completing it.
+- Finally, an add lyrics button which submits the lyrics to the database. A flash message is displayed confirming this.
 
-### Feature 6: Quiz Page
-A quiz to that the knowledge of the end user, that responds to and validates user input
-> ![Quiz Page](docs/Features/quizpage.PNG)   
-> ![Quiz Started](docs/Features/quiz.PNG)  
-The quiz displays the right and or wrong answer  
-> ![RightWrongAnswer](docs/Features/right_wrong_answer.PNG)  
-At the end of the quiz an table displays overall progress with buttons to leave table or start quiz again  
-> ![Quiz Results](docs/Features/quiz_result.PNG)  
-> User stories the features relates to:  
-> * 6.5 An informative quiz where I can test my knowledge on Santorini
-> * 6.6 Feedback on which answers I have got right
-> * 6.7 A final page that displays how well did on the quiz
-> * 6.17 Provide a quiz where the user can test their knowledge
-> * 6.19 A site that provides feedback and validation.
+### Manage Genres Page
+- The Manage Genres page is only visible to site admins whereby they can add, edit or even delete genres from the database.
+- Once again I have used simple Materialize cards to display any genres that have already been or will be added tot the site.
+ 
+### Log In
+- A simple form with two fields is displayed; username and password.
+- 
+- If a new user visits the site a link is display for that user to reigster a new account via the Register Page.
 
-### Feature 7: Contact Page
-A contact page to allow user to contact site owner. Form also displays validation, and message when form is submitted.
-> ![Contact](docs/Features/contactpage.PNG)
-Name Validation  
-> ![Name Validation](docs/Features/namevalidation.PNG)   
-Subject Validation       
-> ![Subject Validation](docs/Features/subjectvalidation.PNG)  
-Email Validation   
-> ![Email Validation](docs/Features/emailvalidation.PNG)  
-Message Validation      
-> ![Message Validation](docs/Features/messagevalidation.PNG)  
-Form Submitted      
-> ![Form Submitted](docs/Features/formsubmitted.PNG)  
-User stories the features relates to:   
-> * 7.9 A contact page to get in touch with the site owner
-> * 7.14 Display a contact form so the user can get in touch with the site owner
-> * 7.19 A site that provides feedback and validation.  
+### Register Page
+- A simple form with two fields is displayed; username and password.
+- If the users is already resgistered there is a link display to redirect back to the Log In page.
 
 ### Feature 8: 404 Error Page
 404 error page for when a user enters a incorrect URL
-> ![404](docs/Features/404.PNG)  
-User stories the features relates to:
-> * 7.19 A site that provides feedback and validation.
-> * 7.20 On the 404 page the user shouldn't use the broswer back but instead the nav bar
-> * 8.13 An error page to show if I have enterted an incorrect URL
 ---
 
 ## Technolgies Used
