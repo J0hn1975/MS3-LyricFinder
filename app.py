@@ -19,32 +19,55 @@ mongo = PyMongo(app)
 
 
 @app.errorhandler(404)
-def page_not_found(error):
+def page_not_found(error) -> object:
+    """
+    This function renders the error 404 page if incorrect url entered
+    :param id: error indentifier
+    :return render_template 404.html
+    """
     return render_template('404.html'), 404
 
 
 @app.route("/")
 @app.route("/home")
-def home():
+def home() -> object:
+    """
+    This function renders the home page.
+    :return render_template of index.html
+    """
     return render_template("index.html")
 
 
 @app.route("/")
 @app.route("/get_lyrics")
-def get_lyrics():
+def get_lyrics() -> object:
+    """
+    This function renders the lyrics page.
+    :return render_template of lyrics.html
+    """
     lyric = list(mongo.db.lyrics.find())
     return render_template("lyrics.html", lyric=lyric)
 
 
 @app.route("/search", methods=["GET", "POST"])
-def search():
+def search() -> object:
+    """
+    This function allows the user to 
+    search the lyrics based on a search criteria
+    :return render_template of lyrics.html
+    """
     query = request.form.get("query")
     lyric = list(mongo.db.lyrics.find({"$text": {"$search": query}}))
     return render_template("lyrics.html", lyric=lyric)
 
 
 @app.route("/register", methods=["GET", "POST"])
-def register():
+def register() -> object:
+    """
+    This function allows a new user to the site to register
+    :return redirect to register page
+    :return render_template register.html
+    """
     if request.method == "POST":
         # check if username already exists in db
         existing_user = mongo.db.users.find_one(
@@ -69,7 +92,13 @@ def register():
 
 
 @app.route("/login", methods=["GET", "POST"])
-def login():
+def login() -> object:
+    """
+    This function allows the user to login. 
+    Checks if user and password already exist in database
+    :return redirect to login page
+    :return render_template login.html
+    """
     if request.method == "POST":
         # check if username exists in db
         existing_user = mongo.db.users.find_one(
@@ -98,7 +127,13 @@ def login():
 
 
 @app.route("/profile/<username>", methods=["GET", "POST"])
-def profile(username):
+def profile(username) -> object:
+    """
+    This fucntion displays the user profile when they are logged on
+    :param id: username
+    :return render_template profile.html
+    :return redirect to login page
+    """
     # grab the session user's username from db
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
@@ -110,7 +145,11 @@ def profile(username):
 
 
 @app.route("/logout")
-def logout():
+def logout() -> object:
+    """
+    This function allows the user to logout and remove the user session cookie
+    :return redirect to login page
+    """
     # remove user from session cookie
     flash("You have been logged out")
     session.pop("user")
@@ -118,7 +157,12 @@ def logout():
 
 
 @app.route("/add_lyrics", methods=["GET", "POST"])
-def add_lyrics():
+def add_lyrics() -> object:
+    """
+    This function allow the user to add lyrics using a predefined criteria
+    :return redirect to get_lyrics
+    :return render_template add_lyrics.html
+    """
     if request.method == "POST":
         lyrics = {
             "music_genre": request.form.get("music_genre"),
@@ -138,7 +182,12 @@ def add_lyrics():
 
 
 @app.route("/edit_lyrics/<lyrics_id>", methods=["GET", "POST"])
-def edit_lyrics(lyrics_id):
+def edit_lyrics(lyrics_id) -> object:
+    """
+    This function allows the lyrics to be edited by the user
+    :param id: lyrics indentifier
+    :return render_template edit_lyrics.html
+    """
     if request.method == "POST":
         submit = {
             "music_genre": request.form.get("music_genre"),
@@ -158,20 +207,34 @@ def edit_lyrics(lyrics_id):
 
 
 @app.route("/delete_lyrics/<lyrics_id>")
-def delete_lyrics(lyrics_id):
+def delete_lyrics(lyrics_id) -> object:
+    """
+    This function deletes the lyrics and all
+    associated headings and album artwork
+    :return redirect to get_lyrics
+    """
     mongo.db.lyrics.remove({"_id": ObjectId(lyrics_id)})
     flash("Lyrics Successfully Deleted")
     return redirect(url_for("get_lyrics"))
 
 
 @app.route("/get_genre")
-def get_genres():
+def get_genres() -> object:
+    """
+    This function calls all the genres stored in the database
+    :return render_template of genres.html
+    """
     genre = list(mongo.db.genre.find().sort("music_genre", 1))
     return render_template("genres.html", genre=genre)
 
 
 @app.route("/add_genre", methods=["GET", "POST"])
-def add_genres():
+def add_genres() -> object:
+    """
+    This function allows the admin user to add genres to the database
+    :return redirect to get_genres page
+    :return render_template add_genre.html
+    """
     if request.method == "POST":
         genre = {
             "music_genre": request.form.get("music_genre")
@@ -184,7 +247,13 @@ def add_genres():
 
 
 @app.route("/edit_genre/<genre_id>", methods=["GET", "POST"])
-def edit_genre(genre_id):
+def edit_genre(genre_id) -> object:
+    """
+    This function allows the genres to be edited by an admin user only
+    :param id: genre indentifier
+    :return redirect to get_genres
+    :return render_template edit_genre.html
+    """
     if request.method == "POST":
         submit = {
             "music_genre": request.form.get("music_genre")
@@ -198,7 +267,12 @@ def edit_genre(genre_id):
 
 
 @app.route("/delete_genre/<genre_id>")
-def delete_genre(genre_id):
+def delete_genre(genre_id) -> object:
+   """
+    This function allows the genres to be edited by an admin user only
+    :param id: genre indentifier
+    :return redirect to get_genres
+    """
     mongo.db.genre.remove({"_id": ObjectId(genre_id)})
     flash("Genre Successfully Deleted")
     return redirect(url_for("get_genres"))
