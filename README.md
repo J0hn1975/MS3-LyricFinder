@@ -224,8 +224,8 @@ The usernames and password are stored in the database as this allows the users t
 - A simple form with two fields is displayed; username and password.
 - If the users is already resgistered there is a link display to redirect back to the Log In page.
 
-### Feature 8: 404 Error Page
-404 error page for when a user enters a incorrect URL
+### 404 Error Page
+- 404 error page for when a user enters a incorrect URL
 ---
 
 ## Technolgies Used
