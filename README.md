@@ -74,9 +74,9 @@ The main goal of this site is to present song lyrics on a website that is easy t
 ---
 
 ## Structure
-The website is made up of 6 web pages. Each page is cleary designed, easy to navigate, and with well layed out information. With a mobile first approach in mind I have used bootstrap throughout to make the site respoinsive on mobile devices.
+The website is made up of 8 web pages. Each page is cleary designed, easy to navigate, and with well layed out information. With a mobile first approach in mind I have used bootstrap throughout to make the site respoinsive on mobile devices.
 
-> The 7 pages are:
+> The 8 pages are:
 > 1. Home Page: A welcome brieft welcome message greets the user, a link for new users to register and a link for existing users to login.
 > 2. Login Page: A page where users can login - with a link to register a new account
 > 3. Register Page: Where new users can register for the first time - with a a link for existing users to login.
@@ -84,7 +84,7 @@ The website is made up of 6 web pages. Each page is cleary designed, easy to nav
 > 5. Profile Page: A profile page that the display the name of the users logged in and a link to add lyrics.
 > 6. New Lyrics Page: A form where a user can add their own lyrics to the site.
 > 7. Manage Genre Page: For admin users only who can add, edit or delate music genres
-> 7. 404: This alerts users if they have entered an incorrect URL for the site. The user is presented with warning message, navbar and footer.
+> 8. 404: This alerts users if they have entered an incorrect URL for the site. The user is presented with warning message, navbar and footer.
 ---
 
 ## Skeleton
@@ -164,9 +164,9 @@ For the brand logo I have used Google Font - Lobster, and for the Lyrics (flow-t
 
 ## Database
 > For the database I have useed MongoDB. The database is made up of 3 collections;
--     Genre
--     Lyrics
--     Users
+- Genre
+- Lyrics
+- Users
 
 ### Genre
 
@@ -249,11 +249,15 @@ I have used the W3C CSS Validation Service - Jigsaw to check that my CSS is vali
 ### HTML Validation
 I have used the W3C Markup Validation Service to check my HTML is valid
 
-|   Page       |  Result              |                      Screenshot                      |
-|:------------:|:--------------------:|:----------------------------------------------------:|
-|   Home       | 0 errors             | [View Results](docs/HTML-Validation/Home_Page.PNG)   |
-|   Quiz       | 0 errors             | [View Results](docs/HTML-Validation/Quiz_Page.PNG)   |
-|  Contact     | 0 errors             | [View Results](docs/HTML-Validation/Contact_Page.PNG)|
+|   Page         |  Result              |                      Screenshot                      |
+|:--------------:|:--------------------:|:----------------------------------------------------:|
+|   Home         | 0 errors             | [View Results](docs/Validation/HTML/Home.PNG)        |
+|   Lyrics       | 0 errors             | [View Results](docs/Validation/HTML/Lyrics.PNG)      |
+|   New Lyrics   | 0 errors             | [View Results](docs/Validation/HTML/New_Lyrics.PNG)  |
+|   Manage Genres| 0 errors             | [View Results](docs/Validation/HTML/Genres.PNG)      |
+|   Register     | 0 errors             | [View Results](docs/Validation/HTML/Register.PNG)    |
+|   Log In       | 0 errors             | [View Results](docs/Validation/HTML/Log_In.PNG)      |
+|   Entire Site  | 0 errors             | [View Results](docs/Validation/HTML/Entire_Site.PNG) |
 ---
 
 ### Javascript Validation
