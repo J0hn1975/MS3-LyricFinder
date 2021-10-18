@@ -243,7 +243,7 @@ I have used the W3C CSS Validation Service - Jigsaw to check that my CSS is vali
 
 |    Page     |               Result                |                       Screenshot                       |
 | :---------: | :---------------------------------: | :----------------------------------------------------: |
-| Entire Site | CSS Validation passed with 0 Errors | [View Results](docs/CSS-Validation/CSS_Validation.PNG) |
+| Entire Site | CSS Validation passed with 0 Errors | [View Results](docs/Validation/CSS/CSS_Validation.PNG) |
 ---
 
 ### HTML Validation
