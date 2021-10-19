@@ -186,6 +186,17 @@ The usernames and password are stored in the database as this allows the users t
 
 ![Users DB Image](docs/database/users.PNG)
 
+### Conceptual Database Model
+
+To help better understand the design of my database I created a conceptual model. This helped decide and plan which collections would be required.
+
+![Conceptual Database Model](docs/database/conceptual_database_design.png)
+
+### Physical database model
+
+Using the conceptual database design I was able to create the physical database model. This physical database model show all the fields stored in each of the database collections.
+![Physical Database Model](docs/database/physical_design_model.PNG)
+
 # Features
 ## Existing Features
 ### Features found throughout the site
