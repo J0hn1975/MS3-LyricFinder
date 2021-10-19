@@ -62,15 +62,17 @@ As a new or returning visitor I would like to see:
 > 6. An error page to show if I have enterted an incorrect URL.
 > 7. The ability to edit and delete lyrics added by the user.
 > 8. A site that has clear login and registration pages.
+> 9. A profile page displayed.
 
 ## Site owner goals
 The main goal of this site is to present song lyrics on a website that is easy to navigate.
-> 9. A way of contact the site owner with any issues related to the site.
-> 10. Present the end user with a clear and simple navigaion menu.
-> 11. The ability to add, edit and delete lyrics.
-> 12. Make a site that is responsive across all devices.
-> 13. A site that provides feedback and validation.
-> 14. On the 404 page the user shouldn't use the broswer back but instead the nav bar.
+> 10. A way of contact the site owner with any issues related to the site.
+> 11. Present the end user with a clear and simple navigaion menu.
+> 12. The ability to add, edit and delete lyrics.
+> 13. Make a site that is responsive across all devices.
+> 14. A site that provides feedback and validation.
+> 15. Abilty to edit or delete genres
+> 16. On the 404 page the user shouldn't use the broswer back but instead the nav bar.
 ---
 
 ## Structure
@@ -199,44 +201,71 @@ Using the conceptual database design I was able to create the physical database 
 
 # Features
 ## Existing Features
-### Features found throughout the site
-- The site is fully responsive on all screen sizes.
-- Nav and footer present and consistent on all pages. The footer is designed to stay at the bottom of each page regardless of content.
-- Each page has its own custom header relevant to the content on the page.
-- Flash messages are displayed when the user performs and action such as logging out or addding lyrics to the site etc.
+### Feature 1: Navbar 
+- A Materialize and fully responsive nav bar, that has links to Home, Quiz and Contact pages. As part the Materalize functionality the nav bar displays as a burger menu on mobile devices.
+> ![Nav Bar](docs/Features/nav_bar.PNG)
+> ![Mobile Nav](docs/Features/mobile_nav.PNG)
+> User stories feature relates to:
+> * 1.1 A site that is easy and clear to navigate
+> * 1.10 Present the end user with a clear and simple navigaion menu
 
-### Home Page
+### Feature 2: Home Page
 - The homepage consists of a background image with a musical theme in keeping with the sites overall subject.
 - An introductory message is also displayed to greet the user.
+> ![Home Page](docs/Features/home_page.PNG)
+> User stories feature relates to:
+> * 1.1 A site that is easy and clear to navigate
 
-### Lyrics Page
+### Feature 3: Lyrics Page
 - A search bar is present at the very top of the page allowing users to search existing lyrics.
 - To dislay the lyrics I have used Materialize card classes with each card being the same size. The front side of the card shows a picture of the band, artist name, music genre, composer and the user the lyrics were added by. Clicking on the fontawesome plus button reveals the song title and also the lyrics of the song.
 - There are two button present (only visible to admins or the user who has added the lyrics) to delete and or edit the lyrics.
+> ![Lyrics Page](docs/Features/lyrics_page.PNG)
+> User stories feature relates to:
+> * 3.7 The ability to edit and delete lyrics added by the user.
+> * 3.11 The ability to add, edit and delete lyrics.
 
-### Profile Page
+### Feature 4: Profile Page
 - The profile page displays the current users name and Materilize card with a link on it to add lyrics.
+> ![Profile Page](docs/Features/profile_page.PNG)
+> User stories feature relates to:
+> * 4.9. A profile page displayed.
 
-### New Lyrics Page
+### Feature 5: New Lyrics Page
 - A form is diplayed made up of 6 input field; Choose Genre (a select dropdown list), artist name, song title, song lyrics, song composer and add album artwork.
 - Each input field is a required element, with form validation not allowing the users to skip a field without first completing it.
 - Finally, an add lyrics button which submits the lyrics to the database. A flash message is displayed confirming this.
+> ![Lyrics Page](docs/Features/new_lyrics_page.PNG)
+> * 5.11 The ability to add, edit and delete lyrics.
 
-### Manage Genres Page
+### Feature 6: Manage Genres Page
 - The Manage Genres page is only visible to site admins whereby they can add, edit or even delete genres from the database.
 - Once again I have used simple Materialize cards to display any genres that have already been or will be added tot the site.
- 
-### Log In
-- A simple form with two fields is displayed; username and password.
-- 
-- If a new user visits the site a link is display for that user to reigster a new account via the Register Page.
+> ![Manage Genres](docs/Features/manage_genres.PNG)
+> User stories feature relates to:
+> * 6.15. Abilty to edit or delete genres
 
-### Register Page
+ 
+### Feature 7: Log In
+- A simple form with two fields is displayed; username and password.
+- If a new user visits the site a link is display for that user to reigster a new account via the Register Page.
+> ![Log In](docs/Features/Log_In.PNG)
+> User stories feature relates to:
+> * 7.8 A site that has clear login and registration pages.
+
+### Feature 8: Register Page
 - A simple form with two fields is displayed; username and password.
 - If the users is already resgistered there is a link display to redirect back to the Log In page.
+> ![Register Page](docs/Features/register.PNG)
+> User stories feature relates to:
+> * 8.8 A site that has clear login and registration pages.
 
-### 404 Error Page
+### Feature 9: 404 Error Page
 - 404 error page for when a user enters a incorrect URL
+> ![404 Error Page](docs/Features/404_error_page.PNG)
+> User stories feature relates to:
+> * 9.6 An error page to show if I have enterted an incorrect URL
+> * 9.14 On the 404 page the user shouldn't use the broswer back but instead the nav bar
 ---
 
 ## Technolgies Used
