@@ -271,8 +271,8 @@ def edit_genre(genre_id) -> object:
 
 @app.route("/delete_genre/<genre_id>")
 def delete_genre(genre_id) -> object:
-   """
-    This function allows the genres to be edited by an admin user only
+    """
+    This function allows the genres to be deleted by an admin user only
     :param id: genre indentifier
     :return redirect to get_genres
     """
