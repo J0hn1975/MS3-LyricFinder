@@ -164,6 +164,7 @@ def add_lyrics() -> object:
     :return render_template add_lyrics.html
     """
     if request.method == "POST":
+        # add lyrics to the database
         lyrics = {
             "music_genre": request.form.get("music_genre"),
             "artist_name": request.form.get("artist_name"),
@@ -189,6 +190,7 @@ def edit_lyrics(lyrics_id) -> object:
     :return render_template edit_lyrics.html
     """
     if request.method == "POST":
+        # pulls exisintg lyrics from the datebase to edit
         submit = {
             "music_genre": request.form.get("music_genre"),
             "artist_name": request.form.get("artist_name"),
@@ -224,6 +226,7 @@ def get_genres() -> object:
     This function calls all the genres stored in the database
     :return render_template of genres.html
     """
+    # adds genres to the database
     genre = list(mongo.db.genre.find().sort("music_genre", 1))
     return render_template("genres.html", genre=genre)
 
