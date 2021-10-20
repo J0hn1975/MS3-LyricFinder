@@ -66,6 +66,10 @@ h4 {
     margin-bottom: 2px;
 }
 
+.red {
+    background-color: #F44336 !important;
+}
+
 
 
 /*............................................Error 404 Page*/
@@ -135,7 +139,7 @@ h4 {
 }
 
 .red {
-    background-color: #9A1509 !important;
+    background-color: darkred !important;
 }
 
 .light-blue.darken-1 {
