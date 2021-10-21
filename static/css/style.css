@@ -8,19 +8,11 @@
     padding: 0px;
 }
 
-.bg {
-    /* The image used */
-    background-image: url("https://dm0qx8t0i9gc9.cloudfront.net/watermarks/image/rDtN98Qoishumwih/grey-musical-node-in-musical-keyboard-background_SB_PM.jpg");
-  
-    /* Full height */
-    height: 615px; 
-    width: 100%;
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+
+
+#register-text {
+    color: black;
+}
 
 /* Text shadow for fonts */
 .text-shadow {
@@ -54,17 +46,32 @@ h5 {
 h4 {
     font-size: 3rem;
     line-height: 424%;
-    margin-bottom: 20px;
+    margin-bottom: 42px;
     margin-top: 20px;
     text-align: center;
 }
 
 
 /* Style p class for register */
-#register {
-    font-size: 25px;
+#register  {
+    font-size: 20px;
     line-height: 320%;
     margin-bottom: 2px;
+    color: black;
+}
+
+#register-text  {
+    font-size: 20px;
+    line-height: 320%;
+    margin-bottom: 2px;
+    color: black;
+}
+
+#login-text {
+    font-size: 20px;
+    line-height: 320%;
+    margin-bottom: 2px;
+    color: black;
 }
 
 .red {
