@@ -362,7 +362,7 @@ Overall results:
 > * Google Chrome - All nav links, features and website work as expected
 > * Firefox Developer Edition - All nav links, features and website work as expected
 
-### User story tests - Does this need to be done for MS3?
+### User story tests
 > 1. A site that is easy and clear to navigate
 
 |                    Feature                    |             Test Steps             |           Expected            |       Actual       |
