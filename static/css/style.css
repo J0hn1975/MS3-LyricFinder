@@ -182,6 +182,14 @@ i.fa-minus-circle {
     color: red;
 }
 
+.submit {
+    color: black;
+}         
+
+i.fa-search {
+    color: black;
+}
+
 /*............................................Footer*/
 /* Fix empty link error on WAVE validation */
 .sr-only{
