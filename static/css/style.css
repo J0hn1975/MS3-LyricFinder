@@ -51,7 +51,6 @@ h4 {
     text-align: center;
 }
 
-
 /* Style p class for register */
 #register  {
     font-size: 20px;
@@ -60,6 +59,7 @@ h4 {
     color: black;
 }
 
+/* Style register link text on home page */
 #register-text  {
     font-size: 20px;
     line-height: 320%;
@@ -67,6 +67,7 @@ h4 {
     color: black;
 }
 
+/* Style login link text on home page */
 #login-text {
     font-size: 20px;
     line-height: 320%;
@@ -78,7 +79,11 @@ h4 {
     background-color: #F44336 !important;
 }
 
-
+/* Card height and margin bottom */
+.card.medium {
+    height: 400px;
+    margin-bottom: 51px;
+}
 
 /*............................................Error 404 Page*/
 /* Style 404 page */
