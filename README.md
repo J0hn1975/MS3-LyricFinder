@@ -66,13 +66,11 @@ As a new or returning visitor I would like to see:
 
 ## Site owner goals
 The main goal of this site is to present song lyrics on a website that is easy to navigate.
-> 10. A way of contact the site owner with any issues related to the site.
-> 11. Present the end user with a clear and simple navigaion menu.
-> 12. The ability to add, edit and delete lyrics.
-> 13. Make a site that is responsive across all devices.
-> 14. A site that provides feedback and validation.
-> 15. Abilty to edit or delete genres
-> 16. On the 404 page the user shouldn't use the broswer back but instead the nav bar.
+> 10. Present the end user with a clear and simple navigaion menu.
+> 11. Make a site that is responsive across all devices.
+> 12. A site that provides feedback and validation.
+> 13. Abilty to edit or delete genres
+> 14. On the 404 page the user shouldn't use the broswer back but instead the nav bar.
 ---
 
 ## Structure
@@ -371,166 +369,117 @@ Overall results:
 | :-------------------------------------------: | :--------------------------------: | :---------------------------: | :----------------: |
 | A website that is easy and clear to navigate. | Clicked on nav links for each page | Pages to load when clicked on | Works as expected |
 
-[User story screenshot](docs/Features/homepage.PNG)  
+[User story screenshot](docs/Features/home_page.PNG)
 
-> 2. A map of where Santorini is located
+> 2. External Social Media links
+c
+|                   Feature    |                          Test Steps                            |    Expected                                     |      Actual       |
+| :--------------------------: | :------------------------------------------------------------: | :---------------------------------------------: | :---------------: |
+| Display social media links.  |  Navigate to the footer where social media icons are displayed | Links to external sites to load when clicked on | Works as expected |  
 
-|                   Feature                    |                          Test Steps                          |    Expected    |      Actual       |
-| :------------------------------------------: | :----------------------------------------------------------: | :------------: | :---------------: |
-| Display a map of where Santorini is located. | Navigate to home page where is map is clearly and prominently displayed | Map to display | Works as expected |  
+[User story screen shot](docs/Features/footer.PNG)  
 
-[User story screen shot](docs/Features/homepage.PNG)  
+> 3. A site that responds and provides feedback on my interactions.
 
-> 3. The current weather conditions in Santorini
+|                           Feature                           |       Test Steps        |               Expected                       |      Actual       |
+| :---------------------------------------------------------: | :---------------------: | :------------------------------------------: | :---------------: |
+|  Flash message that shows an action completed sucessfully   | Enter lyrics.           |  Lyrics added successfully message to display| Works as expected |
 
-|                           Feature                           |       Test Steps        |               Expected                |      Actual       |
-| :---------------------------------------------------------: | :---------------------: | :-----------------------------------: | :---------------: |
-|       Display current weather conditions in Santorini       | Navigate to home page.  |       Weather Widget to display       | Works as expected |
-| More detailed weahter forecast for the next 24hr and 7 days | Click on Weather Widget | Pass through to Forecast7.com website | Works as expected |
+[User story screen shot](docs/Features/site_that_responds.PNG)
 
-[User story screen shot](docs/Features/weatherwidgettest.PNG)
+> 4. A site that I can interact with.
 
-> 4. External social media links to find out more about the island
+|                Feature          |   Test Steps                |      Expected       |      Actual       |
+| :-----------------------------: | :-------------------------: | :-----------------: | :---------------: |
+| Page where user can add lyrics  | Added lyrics to lyrics page | Lyrics to be added  | Works as expected |
 
-|                Feature                 |                          Test Steps                          |               Expected                |      Actual       |
-| :------------------------------------: | :----------------------------------------------------------: | :-----------------------------------: | :---------------: |
-| Social media links to external content | Click on Youtube and Tripadvisor social media links display in footer | Youtube Video and Tripadvisor to load | Works as expected |
+[User story screen shot](docs/Features/add_lyrics.PNG)
 
-> 5. An informative quiz where I can test my knowledge on Santorini
+> 5. As a user I would like to see a responsive site that can be used on mobile devices.
 
-|                         Feature                         |                     Test Steps                      |           Expected            |      Actual       |
-| :-----------------------------------------------------: | :-------------------------------------------------: | :---------------------------: | :---------------: |
-| Find an informative quiz to test knowledge on Santorini | Navigate to quiz page, clicked on Start Quiz button | Quiz to start as question one | Works as expected |
+|                         Feature         |     Test Steps                       |           Expected       |      Actual       |
+| :-------------------------------------: | :----------------------------------: | :----------------------: | :---------------: |
+| Displayed sire in mobile view poiint    | Displayed site in mobile breakpoint  |  Site to be responsive   | Works as expected |  
 
-[User story screen shot](docs/Features/quiztest.PNG)  
+[User story screen shot](docs/Features/responsive.PNG)  
 
-> 6. Feedback on which answers I have got right
+> 6. An error page to show if I have enterted an incorrect URL.
 
-|             Feature              |          Test Steps           |             Expected             |      Actual       |
-| :------------------------------: | :---------------------------: | :------------------------------: | :---------------: |
-| Show feedback on correct answers | Answered a question correctky | Correct answer to be highlighted | Works as expected |
+|                         Feature                               |     Test Steps         |           Expected       |      Actual       |
+| :------------------------------------------------ ----------: | :--------------------: | :----------------------: | :---------------: |
+| A 404 error page will display if an incorrect link is visited | Entered incorrect URL  |  404 Error page to load  | Works as expected | 
 
-[User story screen shot](docs/Features/right_wrong_answer.PNG)  
+[User story screen shot](docs/Features/404_error_page.PNG)  
 
-> 7. A final page that displays how well did on the quiz
+> 7. The ability to edit and delete lyrics added by the user.
 
-|                  Feature                   |   Test Steps   |               Expected               |      Actual       |
-| :----------------------------------------: | :------------: | :----------------------------------: | :---------------: |
-| Display overall summay page at end of quiz | Completed quiz | Overall quiz summary to be displayed | Works as expected |
+|                  Feature                         |   Test Steps                       |               Expected                         |      Actual       |
+| :----------------------------------------------: | :--------------------------------: | :--------------------------------------------: | :---------------: |
+| Delete and Edit buttons on each Materialize card | Clicked on delete and edit buttons | Lyrics to be deleted. Edit lyrics page to show | Works as expected |
 
-[User story screen shot](docs/Features/quiz_result.PNG)
+[User story screen shot](docs/Features/edit_lyrics_page.PNG)
+[User story screen shot](docs/Features/lyrics_deleted.PNG)
 
-> 8. An option to close out of the final page or play quiz again
+> 8. A site that has clear login and registration pages.
 
-|                    Feature                     |   Test Steps   |                    Expected                     |      Actual       |
-| :--------------------------------------------: | :------------: | :---------------------------------------------: | :---------------: |
-| Buttons to close out of quiz or start it again | Completed quiz | 'Try again' and 'Go to home' buttons to display | Works as expected |
+|                    Feature                     |    Test Steps       |                    Expected                     |      Actual       |
+| :--------------------------------------------: | :----------------:  | :---------------------------------------------: | :---------------: |
+|       Log In option on nav bar                 | Clicked on Log In   |            Log In form to be displayed          | Works as expected |
+|       Registration option on nav bar           | Clicked on Register |           Register form to be displayed         | Works as expected |
 
-[User story screen shot](docs/Features/endofquizbuttons.PNG)  
+[User story screen shot](docs/Features/log_in_page.PNG)
+[User story screen shot](docs/Features/register_page.PNG)  
 
-> 9. A contact page to get in touch with the site owner
+> 9. A profile page displayed.
 
 |                   Feature                   |      Test Steps      |             Expected             |      Actual       |
 | :-----------------------------------------: | :------------------: | :------------------------------: | :---------------: |
-| Contact page for user to contact site owner | Clicked on quiz page | Contact form page to be displyed | Works as expected |
+| Profile page displayed when user logs in    | Log in to site       | Profile page to be displayed     | Works as expected |
 
-[User story screen shot](docs/Features/contactpage.PNG) 
+[User story screen shot](docs/Features/profile_page.PNG) 
 
-> 10. A site that responds and provides feedback on my interactions
-
-|                       Feature                       |             Test Steps              |                           Expected                           |      Actual       |
-| :-------------------------------------------------: | :---------------------------------: | :----------------------------------------------------------: | :---------------: |
-| Features that respond and provide feed back to user | Completed contact form, played quiz | User validation displyed on contact form. User progress on quiz displayed | Works as expected |
-
-[User story screen shot](docs/Features/examplesofvalidation.PNG) 
-
-> 11. A site that I can interact with
-
-|              Feature              |               Test Steps                |                       Expected                       |      Actual       |
-| :-------------------------------: | :-------------------------------------: | :--------------------------------------------------: | :---------------: |
-| Interactive features on webs site | User can complete contact form and quiz | Contact form and quiz page for user to interact with | Works as expected |  
-
-[User story screen shot](docs/Features/interactivefeatures.PNG)
-
-> 12. As a user I would like to see a responsive site that can be used on mobile devices
-
-|                   Feature                   |          Test Steps          |                           Expected                           |      Actual       |
-| :-----------------------------------------: | :--------------------------: | :----------------------------------------------------------: | :---------------: |
-| A site that is responsive on mobile devices | View site from mobile device | Site is responsive. Nav bar collapses to burger menu. Test each link. | Works as expected |
-
-[User story screen shot](docs/Features/responsiveness.PNG)  
-
-> 13. An error page to show if I have enterted an incorrect URL
-
-|                         Feature                          |     Test Steps      |        Expected        |      Actual       |
-| :------------------------------------------------------: | :-----------------: | :--------------------: | :---------------: |
-| An error 404 will be displayed if incorrect URL entered. | Enter incorrect URL | Error 404 page to load | Works as expected |  
-
-[User story screen shot](docs/Features/404.PNG)  
-
-> 14. Display a contact form so the user can get in touch with the site owner
-
-|                           Feature                            |        Test Steps         |                Expected                 |      Actual       |
-| :----------------------------------------------------------: | :-----------------------: | :-------------------------------------: | :---------------: |
-| Contact form for the user to get in touch with site owner with questions or queries | Navigated to contact page | Contact form to display on contact page | Works as expected |  
-
-[User story screen shot](docs/Features/contact.PNG)  
-
-> 15. Present the end user with a clear and simple navigaion menu
+> 10. Present the end user with a clear and simple navigaion menu
 
 |                           Feature                            |                     Test Steps                     |            Expected             |      Actual       |
 | :----------------------------------------------------------: | :------------------------------------------------: | :-----------------------------: | :---------------: |
 | Present the end user with a clear and simple navigation menu | Loaded site where the nav bar is clearly layed out | Nav bar to display on each page | Works as expected |
 
-[U er story screen shot](docs/Features/navbar.PNG)
+[User story screen shot](docs/Features/nav_bar.PNG)
 
-> 16. Display the current weather in Santorini
+> 11. Make a site that is responsive across all devices.
 
-|                       Feature                        |    Test Steps    |                   Expected                    |      Actual       |
-| :--------------------------------------------------: | :--------------: | :-------------------------------------------: | :---------------: |
-| Weather Widget displays current weather of Santorini | Loaded home page | Weather widget with daily forecast to display | Works as expected |
+|                   Feature                   |          Test Steps          |                           Expected                           |      Actual       |
+| :-----------------------------------------: | :--------------------------: | :----------------------------------------------------------: | :---------------: |
+| A site that is responsive on mobile devices | View site from mobile device | Site is responsive. Nav bar collapses to burger menu. Test each link. | Works as expected |
 
-[User story screen shot](docs/Features/weatherwidget.PNG)
+[User story screen shot](docs/Features/responsive.PNG)  
 
-> 17. Provide a quiz where the user can test their knowledge
+> 12. A site that provides feedback and validation.
 
-|                   Feature                    |    Test Steps    |           Expected           |      Actual       |
-| :------------------------------------------: | :--------------: | :--------------------------: | :---------------: |
-| Quiz page that contains informative question | Loaded quiz page | Quiz to display on page load | Works as expected |
+|                         Feature                          |     Test Steps                       |        Expected         |      Actual       |
+| :------------------------------------------------------: | :----------------------------------: | :---------------------: | :---------------: |
+| Features that respond and provide feed back to user      |  Tried submitting a blank yrics form | Form not to be sumitted | Works as expected |  
 
-[User story screen shot](docs/Features/quizpage.PNG)
+[User story screen shot](docs/Features/new_lyrics_page.PNG)  
 
-> 18. Make a site that is responsive across all devices.
+> 13. Abilty to add, edit or delete genres (for admin users only)
 
-|                Feature                 |                   Test Steps                   |       Expected        |      Actual       |
-| :------------------------------------: | :--------------------------------------------: | :-------------------: | :---------------: |
-| Site created with mobile first in mind | Test across different devices (emulators used) | Site to be responsive | Works as expected |
+|                           Feature                            |                     Test Steps                     |            Expected             |      Actual       |
+| :----------------------------------------------------------: | :------------------------------------------------: | :-----------------------------: | :---------------: |
+| Add, edit, delete genre function available for admin users   | Logged in a admin. Tested add, edit, delete genres |    Genre add, edit and delete   | Works as expected |
 
-[User story screen shot](docs/Features/deviceresponsivenness-2.png)
+[User story screen shot](docs/Features/add_delete_edit.PNG)
+[User story screen shot](docs/Features/add_genres.PNG)
+[User story screen shot](docs/Features/edit_genres.PNG)
 
-> 19. A site that provides feedback and validation.
+> 14. On the 404 page the user shouldn't use the broswer back button but instead the nav bar.
 
-|                   Feature                   |               Test Steps                |              Expected               |      Actual       |
-| :-----------------------------------------: | :-------------------------------------: | :---------------------------------: | :---------------: |
-| Site that provides feed back and validation | Completed quiz with provides validation | Validation to provided on questions | Works as expected |
+|                       Feature         |    Test Steps   |                   Expected                    |      Actual       |
+| :-----------------------------------: | :-------------: | :-------------------------------------------: | :---------------: |
+| Nav bar displayed on error 404 page   | Loaded 404 page | Weather widget with daily forecast to display | Works as expected |
 
-[User story screen shot](docs/Features/right_wrong_answer.PNG)  
+[User story screen shot](docs/Features/error_404_nav.PNG)
 
-> 20. On the 404 page the user shouldn't use the broswer back but instead the nav bar.
-
-|                         Feature                         |                         Test Steps                         |           Expected            |      Actual       |
-| :-----------------------------------------------------: | :--------------------------------------------------------: | :---------------------------: | :---------------: |
-| 404 page with nav bar for user to navigate back to site | Entered incorrect URL and used nav bar to get back to site | To be directed back main site | Works as expected |
-
-[User story screen shot](docs/Features/404nav.PNG)  
-
-> 21. Display a map of Santorini
-
-|         Feature          |          Test Steps           |         Expected         |      Actual       |
-| :----------------------: | :---------------------------: | :----------------------: | :---------------: |
-| Display map of Santorini | Map of Santorini on home page | To find map on home page | Works as expected |  
-
-[User story screen shot](docs/Features/map.PNG)  
 
 ---
 
