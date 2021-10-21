@@ -369,10 +369,10 @@ Overall results:
 | :-------------------------------------------: | :--------------------------------: | :---------------------------: | :----------------: |
 | A website that is easy and clear to navigate. | Clicked on nav links for each page | Pages to load when clicked on | Works as expected |
 
-[User story screenshot](docs/Features/home_page.PNG)
+[User story screenshot](docs/Features/home_page.PNG)  
 
 > 2. External Social Media links
-c
+
 |                   Feature    |                          Test Steps                            |    Expected                                     |      Actual       |
 | :--------------------------: | :------------------------------------------------------------: | :---------------------------------------------: | :---------------: |
 | Display social media links.  |  Navigate to the footer where social media icons are displayed | Links to external sites to load when clicked on | Works as expected |  
@@ -401,13 +401,13 @@ c
 | :-------------------------------------: | :----------------------------------: | :----------------------: | :---------------: |
 | Displayed sire in mobile view poiint    | Displayed site in mobile breakpoint  |  Site to be responsive   | Works as expected |  
 
-[User story screen shot](docs/Features/responsive.PNG)  
+[User story screen shot](docs/Features/responsive.PNG)      
 
-> 6. An error page to show if I have enterted an incorrect URL.
+> 6. An error page to show if I have enterted an incorrect URL  
 
-|                         Feature                               |     Test Steps         |           Expected       |      Actual       |
-| :------------------------------------------------ ----------: | :--------------------: | :----------------------: | :---------------: |
-| A 404 error page will display if an incorrect link is visited | Entered incorrect URL  |  404 Error page to load  | Works as expected | 
+|                  Feature                         |   Test Steps                       |               Expected                         |      Actual       |
+| :----------------------------------------------: | :--------------------------------: | :--------------------------------------------: | :---------------: |
+| A 404 error page will display if an incorrect link is visited | Entered incorrect URL | 404 Error page to load | Works as expected |
 
 [User story screen shot](docs/Features/404_error_page.PNG)  
 
@@ -417,7 +417,7 @@ c
 | :----------------------------------------------: | :--------------------------------: | :--------------------------------------------: | :---------------: |
 | Delete and Edit buttons on each Materialize card | Clicked on delete and edit buttons | Lyrics to be deleted. Edit lyrics page to show | Works as expected |
 
-[User story screen shot](docs/Features/edit_lyrics_page.PNG)
+[User story screen shot](docs/Features/edit_lyrics_page.PNG)  
 [User story screen shot](docs/Features/lyrics_deleted.PNG)
 
 > 8. A site that has clear login and registration pages.
@@ -427,7 +427,7 @@ c
 |       Log In option on nav bar                 | Clicked on Log In   |            Log In form to be displayed          | Works as expected |
 |       Registration option on nav bar           | Clicked on Register |           Register form to be displayed         | Works as expected |
 
-[User story screen shot](docs/Features/log_in_page.PNG)
+[User story screen shot](docs/Features/log_in_page.PNG)  
 [User story screen shot](docs/Features/register_page.PNG)  
 
 > 9. A profile page displayed.
@@ -468,9 +468,9 @@ c
 | :----------------------------------------------------------: | :------------------------------------------------: | :-----------------------------: | :---------------: |
 | Add, edit, delete genre function available for admin users   | Logged in a admin. Tested add, edit, delete genres |    Genre add, edit and delete   | Works as expected |
 
-[User story screen shot](docs/Features/add_delete_edit.PNG)
-[User story screen shot](docs/Features/add_genres.PNG)
-[User story screen shot](docs/Features/edit_genres.PNG)
+[User story screen shot](docs/Features/add_delete_edit.PNG)  
+[User story screen shot](docs/Features/add_genres.PNG)  
+[User story screen shot](docs/Features/edit_genres.PNG)  
 
 > 14. On the 404 page the user shouldn't use the broswer back button but instead the nav bar.
 
