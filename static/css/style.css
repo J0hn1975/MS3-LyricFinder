@@ -8,15 +8,6 @@
     padding: 0px;
 }
 
-
-
-
-
-/* Text shadow for fonts */
-.text-shadow {
-    text-shadow: 2px 2px 2px #e1f5fe;
-}
-
 /* Change font of brand logo */
 .brand-logo {
     font-family: 'Lobster', cursive;
