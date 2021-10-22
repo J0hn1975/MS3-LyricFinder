@@ -500,18 +500,13 @@ Overall results:
 
 ---
 
-# Bugs - Update for MS£3
-> **Bug** Contact form initially didn't push down when using mobile nav  
-> **Fix** Changed **poistion: absolute;** to **postion: relative**. Changed **top:50%** to **top:25%**. Changed **transform: translate(-50%,50%);** to **transform: translate(-50%,25%);**
->
-> **Bug** Small gap at top of page between bottom of nav bar and top of quiz.  
-> **Fix** Changed **margin: 40px auto;** to **margin: auto;** on .custom box CSS class  
->
-> **Bug** Content map, heading-left doesn't push down on mobile nav  
-> **Fix** Changed **position : absolute;** to **position: relative;** on .hero-text CSS class  
+# Bugs
+> **Bug** Image URL on Edit Lyrics page breaks the album artwork image  
+> **Fix** Removed Image URL section of Edit Lyrics form
 
 # Deployment - Update for MS3
 
+## Github Pages
 I have deployed this site to GitHub pages
 
 > 1. Log in to git hub and find the respositry you wish to deploy
@@ -522,6 +517,7 @@ I have deployed this site to GitHub pages
 > 6. The deplyment will take a few moments to finalise
 > 7. The live site URL is now displayed under Github Pages
 
+## Clone Locally
 Clone site locally
 
 > 1. Log in to Github and navigate to main page of repository
@@ -531,6 +527,32 @@ Clone site locally
 > 5. If required change the directory to where you would like repo cloned to
 > 6. Type git clone and then copy in repo URL
 > 7. Press enter and repo will go through short cloning process
+
+## Mongo Database
+
+> 1. Create an account at mongodb
+> 2. Create a database cluster
+> 3. Select the cluster, and in the collections section create a database and create 5 collections under the database: memories, comments, ratings, tournaments, users
+> 4. In the database access, create a user and allow the user read/write access. Note the username
+> 5. In the network access tab, allow network access from the ip-address of the application connecting to the database
+> 6. In the Databases section click Connect, and select connect your application
+> 7. Note the MONGO_URI, MONGO_DBNAME and user, these parameters are used when deploying locally(env.py file) and deploying on the likes of heroku(config vars)
+
+## Heroku
+
+1. In the app.py file, ensure that debug is not enabled, i.e. set to True
+2. Create a file called ProcFile in the root directory, and add the line <code>web: python app.py</code> if the file does not already exist
+3. Create a requirements.txt file by running the command <code>pip freeze > requirements.txt</code> in your terminal if the file doesn't already exist
+5. Both the ProcFile and requirements.txt files should be added to your git repo in the root directory
+6. Create an account on heroku.com
+7. Create a new application and give it a unique name
+8. In the application dashboard, navigate to the deploy section and connect your application to your git repo, by selecting your repo
+9. Select the branch for example master and enable automatic deploys if desired. Otherwise, a deployment will be manual
+10. The next step is to set the config variables in the Settings section
+11. Set key/value pairs for the following keys: AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, IP, MONGO_DBNAME, MONGO_URI, PORT, SECRET_KEY
+12. Go to the dashboard and trigger a deployment
+13. This will trigger a deployment, once the deployment has been successful click on the "Open App" link to open the app
+14. If you encounter any issues accessing the build logs is a good way to troubleshoot the issue
 
 ---
 
