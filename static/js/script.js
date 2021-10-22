@@ -1,7 +1,6 @@
+    // Initilize select dropdown and sidenav
     $(document).ready(function () {
       $(".sidenav").sidenav({edge: "right"});
-      $(".collapsible").collapsible();
-      $(".tooltipped").tooltip();
       $("select").formSelect();
       $('.parallax').parallax();
       $(".datepicker").datepicker({
@@ -13,6 +12,7 @@
           }
       });
   
+      // Style select drop down
       validateMaterializeSelect();
       function validateMaterializeSelect() {
           let classValid = { "border-bottom": "1px solid #4caf50", "box-shadow": "0 1px 0 0 #4caf50" };
