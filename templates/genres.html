@@ -6,21 +6,21 @@
 <!-- Add Genre Button -->
 <div class="row">
    <div class="col s12 center-align">
-      <a href="{{ url_for('add_genres') }}" class="btn-large light-blue darken-2 text-shadow"> Add Genre <i class="fas fa -plus-square right"></i> </a>
+      <a href="{{ url_for('add_genres') }}" class="btn-large black-text light-blue darken-2"> Add Genre <i class="fas fa -plus-square right"></i> </a>
    </div>
 </div>
 <div class="row">
     {% for genre in genre %}
     <div class="col s12 m3">
-        <div class="card light-blue  teal darken-4 text-shadow center-align">
+        <div class="card light-blue grey lighten-1 center-align">
             <div class="card-content white-text">
                 <span class="card-title">{{ genre.music_genre }}</span>
                 <p>Created by: {{ genre.created_by }}</p>
                 </div>
                 <!-- Edit and Delete Genre Buttons -->
                 <div class="card-action">
-                    <a href="{{ url_for('edit_genre', genre_id=genre._id) }}" class="btn green accent-4">Edit</a>
-                    <a href="{{ url_for('delete_genre', genre_id=genre._id) }}" class="btn light-blue lighten-1">Delete</a>
+                    <a href="{{ url_for('edit_genre', genre_id=genre._id) }}" class="btn black-text green accent-4">Edit</a>
+                    <a href="{{ url_for('delete_genre', genre_id=genre._id) }}" class="btn black-text light-blue lighten-1">Delete</a>
                 </div>
             </div>
         </div>
