@@ -3,6 +3,14 @@
 
 [You can visit the live site here](https://lyric-finder-jw.herokuapp.com/)
 
+ I have created two user for this site for the accessors to use and the credentials are: 
+> username: AdminUser password: Password123
+> username: NormalUser password: Password123
+
+The users I have used on this site are:
+> username: Admin password Em3w0rth1
+> username: JohnW passord Em3w0rth1
+
 ## Table of Contents
 > 1. [Target Audience](#target-audience)
 > 2. [Project Goals](#project-goals)
@@ -330,7 +338,7 @@ I have used the WAVE Web Accessibilty Evaluation Tool to ensure site is accessib
 
 --- 
 
-### Lighthouse Performance - Does this need to be done for MS3?
+### Lighthouse Performance
 I have used Google Lighthouse (in Google Dev tools) to measure the performance the site
 
 |       Page             |                            Result                             |                        Screenshot                                   |
@@ -504,7 +512,7 @@ Overall results:
 > **Bug** Image URL on Edit Lyrics page breaks the album artwork image  
 > **Fix** Removed Image URL section of Edit Lyrics form
 
-# Deployment - Update for MS3
+# Deployment
 
 ## Github Pages
 I have deployed this site to GitHub pages
