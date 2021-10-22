@@ -557,7 +557,7 @@ Clone site locally
 8. In the application dashboard, navigate to the deploy section and connect your application to your git repo, by selecting your repo
 9. Select the branch for example master and enable automatic deploys if desired. Otherwise, a deployment will be manual
 10. The next step is to set the config variables in the Settings section
-11. Set key/value pairs for the following keys: AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, IP, MONGO_DBNAME, MONGO_URI, PORT, SECRET_KEY
+11. Set key/value pairs for the following keys: IP, MONGO_DBNAME, MONGO_URI, PORT, SECRET_KEY
 12. Go to the dashboard and trigger a deployment
 13. This will trigger a deployment, once the deployment has been successful click on the "Open App" link to open the app
 14. If you encounter any issues accessing the build logs is a good way to troubleshoot the issue
