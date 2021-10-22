@@ -8,6 +8,16 @@
     padding: 0px;
 }
 
+/* Seet back ground colour of entire site */
+body {
+    background-color: blanchedalmond;
+}
+
+/* Set background height of home page */
+.bg {
+    min-height: 615px;
+}
+ 
 /* Change font of brand logo */
 .brand-logo {
     font-family: 'Lobster', cursive;
@@ -65,6 +75,7 @@ h4 {
     color: black;
 }
 
+/* Red buttons */
 .red {
     background-color: #F44336 !important;
 }
@@ -137,16 +148,10 @@ h4 {
     line-height: 32px;
 }
 
+/* Input field text colour */
 .input-field>label {
     color: black !important;
 }
-
-
-
-.light-blue.darken-1 {
-    background-color: #035B87 !important;
-}
-
 
 /*............................................Buttons*/
 /* Large button */
@@ -172,10 +177,12 @@ i.fa-minus-circle {
     color: red;
 }
 
+/* Text colour for submit */
 .submit {
     color: black;
 }         
 
+/* Text colour for search icon */
 i.fa-search {
     color: black;
 }
@@ -191,9 +198,8 @@ i.fa-search {
     overflow:hidden;
   }
 
-
 /*............................................Media Queries*/
-/* Change font sixe of mobile brand logo */
+/* Change font size of mobile brand logo */
 @media only screen and (max-width: 992px) {
     .sidenav>a {
         padding: 0 16px;
