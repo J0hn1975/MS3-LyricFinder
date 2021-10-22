@@ -47,17 +47,14 @@ On this site they will be view existing lyrics, as well as add and edit their ow
 
 # The 5 Planes of UX
 ## Strategy
-## Project Goals - Delete?
+## Project Goals
 ---
 The primary business goals of this site are:
-> * To promote the island of Santorini
-> * Increase the number of vistors to the island
-> * Provide inspiration for Santorini as a holiday destination
+> * To encourage people to add their own lyrics
+> * Create a site that is easy to navigate
 
 The primary cusomter goals of this site are:
-> * Learn more about the island before visting
-> * Contact the site owner with any additional questions or queries
-> * Be inspired to choose Santorini as a viable holiday destination
+> * Read and create user lyrics
 
 ## Scope
 ## User Stories
