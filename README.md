@@ -312,7 +312,8 @@ I have used PEP8 Online to check of my Ptyhon code is valid or not.
 |:------------:|:--------:|:-------------------------------------------------:|
 |    app.py    | 0 errors | [View Results](docs/Validation/Python/app.py.PNG) |
 
-### WAVE Accessibilty
+### WAVE Accessibility
+
 I have used the WAVE Web Accessibilty Evaluation Tool to ensure site is accessible
 
 |   Page        |            Result           |                      Screenshot                      |      
@@ -332,14 +333,27 @@ I have used the WAVE Web Accessibilty Evaluation Tool to ensure site is accessib
 ### Lighthouse Performance - Does this need to be done for MS3?
 I have used Google Lighthouse (in Google Dev tools) to measure the performance the site
 
-|       Page           |                            Result                            |                        Screenshot                        |
-| :------------------: | :----------------------------------------------------------: | :------------------------------------------------------: |
-|  Home (Desktop)      | 97 Performance, 95 Accessibility, 87 Best Practices, 100 SEO |  [View Results](docs/Lighthouse/Desktop/index.html.PNG)  |
-|  Lyrics (Desktop)    | 99 Performance, 96 Accessibility, 93 Best Practices, 100 SEO |  [View Results](docs/Lighthouse/Desktop/quiz.html.PNG)   |
-| New Lyrics (Desktop) | 99 Performance, 96 Accessibility, 93 Best Practices, 100 SEO | [View Results](docs/Lighthouse/Desktop/contact.html.PNG) |
-|   Home (Mobile)   | 77 Performance, 97 Accessibility, 87 Best Practices, 100 SEO |  [View Results](docs/Lighthouse/Mobile/index.html.PNG)   |
-|   Quiz (Mobile)   | 84 Performance, 97 Accessibility, 93 Best Practices, 100 SEO |   [View Results](docs/Lighthouse/Mobile/quiz.html.PNG)   |
-| Contact (Mobile)  | 88 Performance, 97 Accessibility, 93 Best Practices, 100 SEO | [View Results](docs/Lighthouse/Mobile/contact.html.PNG)  |
+|       Page             |                            Result                             |                        Screenshot                                   |
+| :--------------------: | :------------------------------------------------------------:|:------------------------------------------------------------------: |
+|  Log In (Desktop)      | 100 Performance, 87 Accessibility, 93 Best Practices, 78 SEO  |  [View Results](docs/Validation/Lighthouse/Desktop/login.PNG)       |
+|  Register (Desktop)    | 100 Performance, 87 Accessibility, 93 Best Practices, 78 SEO  |  [View Results](docs/Validation/Lighthouse/Desktop/register.PNG)    |
+| Home (Desktop)         | 100 Performance, 82 Accessibility, 100 Best Practices, 78 SEO | [View Results](docs/Validation/Lighthouse/Desktop/home.PNG)         |
+|   Lyrics (Desktop)     | 97 Performance, 88 Accessibility, 80 Best Practices, 80 SEO   |  [View Results](docs/Validation/Lighthouse/Desktop/lyrics.PNG)      |
+|   New Lyrics (Desktop) | 100 Performance, 78 Accessibility, 100 Best Practices, 78 SEO |   [View Results](docs/Validation/Lighthouse/Desktop/new_lyrics.PNG) |
+| Manage Genres (Desktop)| 100 Performance, 82 Accessibility, 100 Best Practices, 78 SEO | [View Results](docs/Validation/Lighthouse/Desktop/manage_genres.PNG)|
+| Add Genre (Desktop)    | 100 Performance, 88 Accessibility, 100 Best Practices, 78 SEO | [View Results](docs/Validation/Lighthouse/Desktop/add_genre.PNG)    |
+| Edit Genre (Desktop)   | 100 Performance, 88 Accessibility, 100 Best Practices, 78 SEO | [View Results](docs/Validation/Lighthouse/Desktop/edit_genre.PNG)   |
+| Edit Lyrics (Desktop)  | 100 Performance, 78 Accessibility, 100 Best Practices, 78 SEO | [View Results](docs/Validation/Lighthouse/Desktop/edit_lyrics.PNG)  |
+| Log In (Mobile)        | 98 Performance, 87 Accessibility, 93 Best Practices, 100 SEO  | [View Results](docs/Validation/Lighthouse/Mobile/login.PNG)         |
+| Register (Mobile)      | 98 Performance, 87 Accessibility, 93 Best Practices, 82 SEO   | [View Results](docs/Validation/Lighthouse/Mobile/register.PNG)      |
+| Home (Mobile)          | 96 Performance, 82 Accessibility, 93 Best Practices, 82 SEO   | [View Results](docs/Validation/Lighthouse/Mobile/home.PNG)          |
+| Lyrics (Mobile)        | 98 Performance, 88 Accessibility, 80 Best Practices, 83 SEO   | [View Results](docs/Validation/Lighthouse/Mobile/lyrics.PNG)        |
+| New Lyrics (Mobile)    | 98 Performance, 78 Accessibility, 93 Best Practices, 80 SEO   | [View Results](docs/Validation/Lighthouse/Mobile/new_lyrics.PNG)    |
+| Manage Genre (Mobile)  | 96 Performance, 82 Accessibility, 93 Best Practices, 82 SEO   | [View Results](docs/Validation/Lighthouse/Mobile/manage_genres.PNG) |
+| Add Genre (Mobile)     | 99 Performance, 88 Accessibility, 93 Best Practices, 82 SEO   | [View Results](docs/Validation/Lighthouse/Mobile/add_genre.PNG)     |
+| Edit Genre (Mobile)    | 98 Performance, 88 Accessibility, 93 Best Practices, 82 SEO   | [View Results](docs/Validation/Lighthouse/Mobile/edit_genre.PNG)    |
+| Edit Lyrics (Mobile)   | 95 Performance, 78 Accessibility, 93 Best Practices, 80 SEO   | [View Results](docs/Validation/Lighthouse/Mobile/edit_lyrics.PNG)   |
+| Edit Genre (Mobile)    | 98 Performance, 88 Accessibility, 93 Best Practices, 82 SEO   | [View Results](docs/Validation/Lighthouse/Mobile/edit_genre.PNG)    |
 --- 
 
 ### Device Tests
