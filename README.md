@@ -153,11 +153,11 @@ To design and develop the wireframes I first used Balsamiq, then used Snipping T
 ---
 
 ## Surface
-## Colours - Change for MS3
+## Colours
 Each page is design with very simple colours and images to showcase the island. The colours I have used are as follows:
-> - #FFCC51 - used as a background color for the footer and navbar
-> - #050505 - used for the site brand and nav links
-> - #009688 - used to style the quiz text.
+> - Light Blue and Red for buttons
+> - Black text for buttons and card contents
+> - Blanchedalmond for site back ground colours
 
 ## Typography
 For the brand logo I have used Google Font - Lobster, and for the Lyrics (flow-test) I have used Google Font - Roboto Condensed. Everywhere else I have used the default Materialize font.
