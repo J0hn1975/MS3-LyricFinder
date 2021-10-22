@@ -312,17 +312,20 @@ I have used PEP8 Online to check of my Ptyhon code is valid or not.
 |:------------:|:--------:|:-------------------------------------------------:|
 |    app.py    | 0 errors | [View Results](docs/Validation/Python/app.py.PNG) |
 
-### WAVE Accessibilty - Does this need to be done for MS3?
+### WAVE Accessibilty
 I have used the WAVE Web Accessibilty Evaluation Tool to ensure site is accessible
 
-|   Page  |            Result           | Screenshot |
-|:-------:|:---------------------------:|:----------:                                                                 
-|   Home    | 0 errors, 0 contrast errors | [View results](/docs/WAVE-Accessibilty/index.html_Wave_Validation.PNG)      |
-|   Lyrics  | 0 errors, 0 contrast errors | [View results](/docs/WAVE-Accessibilty/quiz.html_Wave_Validation.PNG)       |
-|   Profile | 0 errors, 0 contrast errors | [View results](assets/docs/WAVE-Accessibilty/quiz.html_Wave_Validation.PNG) |
-| New Lyrics | 0 errors, 0 contrast errors | [View results](assets/docs/WAVE-Accessibilty/quiz.html_Wave_Validation.PNG) |
-| Manage Genres | 0 errors, 0 contrast errors | [View results](assets/docs/WAVE-Accessibilty/quiz.html_Wave_Validation.PNG) |
-| Log In | 0 errors, 0 contrast errors | [View results](assets/docs/WAVE-Accessibilty/quiz.html_Wave_Validation.PNG) |
+|   Page        |            Result           |                      Screenshot                      |      
+|:-------------:|:---------------------------:|:----------------------------------------------------:|                                                                
+|   Log In      | 0 errors, 0 contrast errors | [View results](docs/Validation/WAVE/login.PNG)       |
+|   Register    | 0 errors, 0 contrast errors | [View results](docs/Validation/WAVE/register.PNG)    |
+|   Home        | 0 errors, 0 contrast errors | [View results](docs/Validation/WAVE/home.PNG)        |
+|   Lyrics      | 0 errors, 0 contrast errors | [View results](docs/Validation/WAVE/lyrics.PNG)      |
+|  New Lyrics   | 1 errors, 0 contrast errors | [View results](docs/Validation/WAVE/new_lyrics.PNG)  |
+| Manage Genres | 0 errors, 0 contrast errors | [View results](docs/Validation/WAVE/genres.PNG)      |
+|   Add Genre   | 0 errors, 0 contrast errors | [View results](docs/Validation/WAVE/add_genre.PNG)   |
+|   Edit Genre  | 0 errors, 0 contrast errors | [View results](docs/Validation/WAVE/edit_genre.PNG)  |
+|  Edit Lyrics  | 1 errors, 0 contrast errors | [View results](docs/Validation/WAVE/edit_lyrics.PNG) |
 
 --- 
 
