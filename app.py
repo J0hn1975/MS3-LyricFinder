@@ -29,7 +29,7 @@ def page_not_found(error) -> object:
     """
     return render_template('404.html'), 404
 
-
+@app.route("/")
 @app.route("/home")
 def home() -> object:
     """
@@ -45,7 +45,7 @@ def get_lyrics() -> object:
     This function renders the lyrics page.
     :return render_template of lyrics.html
     """
-    lyrics = list(mongo.db.lyric_finder.find())
+    lyric = list(mongo.db.lyric_finder.find())
     return render_template("lyrics.html", lyric=lyric)
 
 
