@@ -45,7 +45,7 @@ def get_lyrics() -> object:
     This function renders the lyrics page.
     :return render_template of lyrics.html
     """
-    lyric = list(mongo.db.lyric.find())
+    lyric = list(mongo.db.lyric_finder.find())
     return render_template("lyrics.html", lyric=lyric)
 
 
