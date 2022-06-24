@@ -5,6 +5,7 @@ from flask import (
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from werkzeug.security import generate_password_hash, check_password_hash
+
 if os.path.exists("env.py"):
     import env
 
@@ -21,14 +22,14 @@ mongo = PyMongo(app)
 @app.errorhandler(404)
 def page_not_found(error) -> object:
     """
-    This function renders the error 404 page if incorrect url entered
+    This function renders the error 404 page
+    if incorrect url entered
     :param id: error indentifier
     :return render_template 404.html
     """
     return render_template('404.html'), 404
 
 
-@app.route("/")
 @app.route("/home")
 def home() -> object:
     """
@@ -38,7 +39,6 @@ def home() -> object:
     return render_template("index.html")
 
 
-@app.route("/")
 @app.route("/get_lyrics")
 def get_lyrics() -> object:
     """
@@ -52,7 +52,7 @@ def get_lyrics() -> object:
 @app.route("/search", methods=["GET", "POST"])
 def search() -> object:
     """
-    This function allows the user to 
+    This function allows the user to
     search the lyrics based on a search criteria
     :return render_template of lyrics.html
     """
@@ -77,11 +77,10 @@ def register() -> object:
             flash("Username already exists")
             return redirect(url_for("register"))
 
-        register = {
+        mongo.db.users.insert_one({
             "username": request.form.get("username").lower(),
             "password": generate_password_hash(request.form.get("password"))
-        }
-        mongo.db.users.insert_one(register)
+        })
 
         # put the new user into 'session' cookie
         session["user"] = request.form.get("username").lower()
@@ -94,7 +93,7 @@ def register() -> object:
 @app.route("/login", methods=["GET", "POST"])
 def login() -> object:
     """
-    This function allows the user to login. 
+    This function allows the user to login.
     Checks if user and password already exist in database
     :return redirect to login page
     :return render_template login.html
@@ -107,12 +106,12 @@ def login() -> object:
         if existing_user:
             # ensure hashed password matches user input
             if check_password_hash(
-                    existing_user["password"], request.form.get("password")):
-                        session["user"] = request.form.get("username").lower()
-                        flash("Welcome, {}".format(
-                            request.form.get("username")))
-                        return redirect(url_for(
-                            "profile", username=session["user"]))
+                existing_user["password"], request.form.get("password")):
+                session["user"] = request.form.get("username").lower()
+                flash("Welcome, {}".format(
+                    request.form.get("username")))
+                return redirect(url_for(
+                    "profile", username=session["user"]))
             else:
                 # invalid password match
                 flash("Incorrect Username and/or Password")
@@ -285,3 +284,5 @@ if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
             debug=False)
+
+
