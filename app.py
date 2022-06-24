@@ -45,7 +45,7 @@ def get_lyrics() -> object:
     This function renders the lyrics page.
     :return render_template of lyrics.html
     """
-    lyric = list(mongo.db.lyrics.find())
+    lyric = list(mongo.db.lyric.find())
     return render_template("lyrics.html", lyric=lyric)
 
 
@@ -283,6 +283,4 @@ def delete_genre(genre_id) -> object:
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
-            debug=False)
-
-
+            debug=True)
