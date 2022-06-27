@@ -1,4 +1,5 @@
 import os
+import dns
 from flask import (
     Flask, flash, render_template,
     redirect, request, session, url_for)
@@ -17,7 +18,6 @@ app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
-
 
 @app.errorhandler(404)
 def page_not_found(error) -> object:
