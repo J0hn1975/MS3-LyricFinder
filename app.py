@@ -1,4 +1,5 @@
 import os
+import dns
 from flask import (
     Flask, flash, render_template,
     redirect, request, session, url_for)
@@ -14,7 +15,7 @@ app = Flask(__name__)
 
 app.secret_key = os.environ.get("SECRET_KEY")
 app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
-app.config["MONGO_URI"] = "mongodb+srv://J0hn1975:N1k0nD750@myfirstcluster.0yzye.mongodb.net/lyric_finder?retryWrites=true&w=majority"
+app.config["MONGO_URI"] = "mongodb+srv://J0hn1975:N1k0nD750@myfirstcluster.0yzye.mongodb.net/lyric_finder?retryWrites=true&w=majority/"
 mongo = PyMongo(app)
 
 
