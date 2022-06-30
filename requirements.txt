@@ -86,7 +86,7 @@ pylint==2.12.2
 pymongo==4.1.1
 pyparsing==3.0.7
 pyrsistent==0.18.1
-python-dateutil==2.1
+python-dateutil==1.5
 PyYAML==6.0
 pyzmq==22.3.0
 readme-renderer==32.0
