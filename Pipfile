@@ -7,7 +7,7 @@ name = "pypi"
 gunicorn = "*"
 flask = "*"
 flask-pymongo = "*"
-pymongo = "*"
+pymongo = {extras = ["srv"], version = "*"}
 dnspython = "*"
 
 [dev-packages]
