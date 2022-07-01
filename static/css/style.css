@@ -2,15 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
 /*............................................Special headings*/
+
 /* Reset default margin and padding */
 * {
     margin: 0px;
     padding: 0px;
 }
 
-/* Seet back ground colour of entire site */
+/* Set back ground colour of entire site */
 body {
-    background-color: blanchedalmond;
+    background-color: #;
 }
 
 /* Set background height of home page */
@@ -20,9 +21,9 @@ body {
  
 /* Change font of brand logo */
 .brand-logo {
-    font-family: 'Lobster', cursive;
-    margin-left: 10px;
-    color:#3B3B3B;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
 }
 
 /* Style headings for flash messages */
@@ -94,6 +95,53 @@ h4 {
 .card.medium {
     height: 400px;
     margin-bottom: 51px;
+}
+
+/**************************/
+/* NAVIGATION */
+/**************************/
+
+ul, a, li {
+    list-style: none;
+    text-decoration: none;
+    display: inline;
+}
+
+
+
+.nav-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fdf2e9;
+    height: 50px;
+}
+
+.sub-nav-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.search {
+    display: flex;
+    width: 220px;
+    margin-left: 1rem;
+    align-items: center;
+}
+
+.icon, .search {
+    background: white;
 }
 
 /*............................................Error 404 Page*/
