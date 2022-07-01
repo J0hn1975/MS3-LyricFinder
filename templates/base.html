@@ -2,181 +2,181 @@
 <html lang="en">
 
 <head>
-    {% block meta %}
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="Enter your description here" />
-    {% endblock %}
+   {% block meta %}
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="Description" content="Enter your description here" />
+   {% endblock %}
 
-    {% block corecss %}
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    {% endblock %}
+   {% block corecss %}
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+   {% endblock %}
 
-    {% block corejs %}
-    <!-- Javascript -->
-    <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
-    </script>
-    <!-- Stripe payments -->
-    <script src="https://js.stripe.com/v3/"></script>
-    {% endblock %}
+   {% block corejs %}
+   <!-- Javascript -->
+   <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+   </script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+   </script>
+   <!-- Stripe payments -->
+   <script src="https://js.stripe.com/v3/"></script>
+   {% endblock %}
 
-    <title>Lyric Finder {% block extra_title %}{% endblock %}</title>
+   <title>Lyric Finder {% block extra_title %}{% endblock %}</title>
 </head>
 
 <body>
-    <!-- Main page header -->
-    <header class="container-fluid fixed-top">
-        <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
-            <div class="col-12 col-lg-3 py-1 py-lg-0 text-center text-lg-left ">
-                <a href="#" class="nav-link main-logo-link">
-                    <h2 class="logo-font text-black my-0"><strong>Love</strong> Fitness</h2>
-                </a>
+   <!-- Main page header -->
+   <header class="container-fluid fixed-top">
+      <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
+         <div class="col-12 col-lg-3 py-1 py-lg-0 text-center text-lg-left ">
+            <a href="#" class="nav-link main-logo-link">
+               <h2 class="logo-font text-black my-0"><strong>Love</strong> Fitness</h2>
+            </a>
+         </div>
+         <!-- Search -->
+         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 ">
+            <form method="GET" action="#">
+               <div class="input-group w-100">
+                  <label for="siteSearch" class="sr-only">Search</label>
+                  <input class="form-control border border-black rounded-0" id="siteSearch" type="text" name="q"
+                     placeholder="Search our site" />
+                  <div class="input-group-append">
+                     <button class="form-control btn btn-black border border-black rounded-0" aria-label="submit"
+                        type="submit">
+                        <span class="icon">
+                           <i class="fas fa-search"></i>
+                        </span>
+                     </button>
+                  </div>
+               </div>
+            </form>
+         </div>
+         <!-- Account option when logged in or out-->
+         <div class="col-12 col-lg-5 my-auto py-1 py-lg-0">
+            <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+               <li class="list-inline-item dropdown">
+                  <a class="text-black nav-link" href="#" data-bs-toggle="dropdown" aria-haspopup="true"
+                     aria-expanded="false">
+                     <div class="text-center">
+                        <a href="{{ url_for('register') }}">Sign Up</a>
+                     </div>
+                  </a>
+               </li>
+               <!-- favourites -->
+               <li class="list-inline-item">
+                  <a class="font-weight-bold text-black nav-link" href="#">
+                     <div class="text-center">
+                        <a href="{{ url_for('login') }}">Sign In</a>
+                     </div>
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <!-- Mobile and main nav area -->
+      <div class="row">
+         <nav class="navbar navbar-expand-lg navbar-light bg-blue-yonder w-100">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+               aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            {% include 'includes/mobile-top-header.html' %} {% include 'includes/main-nav.html' %}
+         </nav>
+      </div>
+      <!-- Information Banner -->
+      <div id="info-banner" class="row fw-bold text-center bg-wild-blue-yonder">
+         <div class="col">
+            <div class="mt-1 mb-1">
+               <span class="text-black text-center">Free worldwide delivery on orders over
+                  £{{ free_delivery_threshold }}!</span>
+               <span class="d-none d-lg-inline ml-3 mr-3 text-black">-</span>
+               <span class="d-none d-lg-inline text-black">Next day delivery options available</span>
             </div>
-            <!-- Search -->
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 ">
-                <form method="GET" action="{% url 'products' %}">
-                    <div class="input-group w-100">
-                        <label for="siteSearch" class="sr-only">Search</label>
-                        <input class="form-control border border-black rounded-0" id="siteSearch" type="text" name="q"
-                            placeholder="Search our site" />
-                        <div class="input-group-append">
-                            <button class="form-control btn btn-black border border-black rounded-0" aria-label="submit"
-                                type="submit">
-                                <span class="icon">
-                                    <i class="fas fa-search"></i>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                </form>
+         </div>
+      </div>
+   </header>
+   <div class="flash-messages">
+      <!-- flash messages -->
+      {% with messages = get_flashed_messages() %}
+      {% if messages %}
+      {% for message in messages %}
+      <div class="row flashes">
+         <h4 class="light-blue lighten-4 center-align">{{ message }}</h4>
+      </div>
+      {% endfor %}
+      {% endif %}
+      {% endwith %}
+   </div>
+   <!-- Main container-->
+   <main class="container">
+      {% block content %}
+      {% endblock %}
+   </main>
+   <!-- Footer -->
+   {% block footer %}
+   <footer class="page-footer light-blue darken-4">
+      <div class="container">
+         <div class="row">
+            <div class="col l6 s12">
+               <h5 class="white-text">Lyric Finder</h5>
+               <p class="grey-text text-lighten-4">
+                  Hi and Welcome to Lyric Finder!. A site where you can search for your favourite song lyrics
+                  with
+                  other music fans. On this site, you can view lyrics created by other users or even add your
+                  own.
+               </p>
             </div>
-            <!-- Account option when logged in or out-->
-            <div class="col-12 col-lg-5 my-auto py-1 py-lg-0">
-                <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-                    <li class="list-inline-item dropdown">
-                        <a class="text-black nav-link" href="#" data-bs-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
-                            <div class="text-center">
-                                <a href="{{ url_for('register') }}">Sign Up</a>
-                            </div>
-                        </a>
-                    </li>
-                    <!-- favourites -->
-                    <li class="list-inline-item">
-                        <a class="font-weight-bold text-black nav-link" href="#">
-                            <div class="text-center">
-                                <a href="{{ url_for('login') }}">Sign In</a>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
+            <div class="col l4 offset-l2 s12">
+               <h5 class="white-text">Social Links</h5>
+               <ul class="social-links center-align">
+                  <li>
+                     <a class="white-text" href="https://facebook.com/" target="_blank" rel="noreferrer">
+                        <i class="fab fa-facebook" aria-hidden="true"><span class="sr-only">Search</span></i>
+                     </a>
+                  </li>
+                  <li>
+                     <a class="white-text" href="https://instagram.com/" target="_blank" rel="noreferrer">
+                        <i class="fab fa-instagram" aria-hidden="true"><span class="sr-only">Search</span></i>
+                     </a>
+                  </li>
+                  <li>
+                     <a class="white-text" href="https://twitter.com/" target="_blank" rel="noreferrer">
+                        <i class="fab fa-twitter" aria-hidden="true"><span class="sr-only">Search</span></i>
+                     </a>
+                  </li>
+               </ul>
             </div>
-        </div>
-        <!-- Mobile and main nav area -->
-        <div class="row">
-            <nav class="navbar navbar-expand-lg navbar-light bg-blue-yonder w-100">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
-                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                {% include 'includes/mobile-top-header.html' %} {% include 'includes/main-nav.html' %}
-            </nav>
-        </div>
-        <!-- Information Banner -->
-        <div id="info-banner" class="row fw-bold text-center bg-wild-blue-yonder">
-            <div class="col">
-                <div class="mt-1 mb-1">
-                    <span class="text-black text-center">Free worldwide delivery on orders over
-                        £{{ free_delivery_threshold }}!</span>
-                    <span class="d-none d-lg-inline ml-3 mr-3 text-black">-</span>
-                    <span class="d-none d-lg-inline text-black">Next day delivery options available</span>
-                </div>
-            </div>
-        </div>
-    </header>
-    <div class="flash-messages">
-        <!-- flash messages -->
-        {% with messages = get_flashed_messages() %}
-        {% if messages %}
-        {% for message in messages %}
-        <div class="row flashes">
-            <h4 class="light-blue lighten-4 center-align">{{ message }}</h4>
-        </div>
-        {% endfor %}
-        {% endif %}
-        {% endwith %}
-    </div>
-    <!-- Main container-->
-    <main class="container">
-        {% block content %}
-        {% endblock %}
-    </main>
-    <!-- Footer -->
-    {% block footer %}
-    <footer class="page-footer light-blue darken-4">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Lyric Finder</h5>
-                    <p class="grey-text text-lighten-4">
-                        Hi and Welcome to Lyric Finder!. A site where you can search for your favourite song lyrics
-                        with
-                        other music fans. On this site, you can view lyrics created by other users or even add your
-                        own.
-                    </p>
-                </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Social Links</h5>
-                    <ul class="social-links center-align">
-                        <li>
-                            <a class="white-text" href="https://facebook.com/" target="_blank" rel="noreferrer">
-                                <i class="fab fa-facebook" aria-hidden="true"><span class="sr-only">Search</span></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="white-text" href="https://instagram.com/" target="_blank" rel="noreferrer">
-                                <i class="fab fa-instagram" aria-hidden="true"><span class="sr-only">Search</span></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="white-text" href="https://twitter.com/" target="_blank" rel="noreferrer">
-                                <i class="fab fa-twitter" aria-hidden="true"><span class="sr-only">Search</span></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- Footer copyright -->
-        <div class="footer-copyright">
-            <div class="container center-align">
-                © 2021 Lyric Finder
-            </div>
-        </div>
-    </footer>
-    {% endblock %}
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
-    </script>
-    <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-    {% block scripts %}
-    {% endblock %}
+         </div>
+      </div>
+      <!-- Footer copyright -->
+      <div class="footer-copyright">
+         <div class="container center-align">
+            © 2021 Lyric Finder
+         </div>
+      </div>
+   </footer>
+   {% endblock %}
+   <!-- Scripts -->
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+   </script>
+   <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
+   <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+   {% block scripts %}
+   {% endblock %}
 </body>
 
 </html>
