@@ -38,14 +38,14 @@
 <body>
    <!-- Main page header -->
    <header class="container-fluid fixed-top">
-      <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
-         <div class="col-12 col-lg-3 py-1 py-lg-0 text-center text-lg-left ">
+      <div id="topnav" class="row bg-amber pt-lg-2 d-none d-lg-flex">
+         <div class="col-12 col-lg-3 py-1 py-lg-0 text-center text-lg-left">
             <a href="#" class="nav-link main-logo-link">
-               <h2 class="logo-font text-black my-0"><strong>Love</strong> Fitness</h2>
+               <p class="text-black text-start">Lyric Finder</p>
             </a>
          </div>
          <!-- Search -->
-         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 ">
+         <div class="col-12 col-lg-4 mx-auto">
             <form method="GET" action="#">
                <div class="input-group w-100">
                   <label for="siteSearch" class="sr-only">Search</label>
@@ -63,12 +63,11 @@
             </form>
          </div>
          <!-- Account option when logged in or out-->
-         <div class="col-12 col-lg-5 my-auto py-1 py-lg-0">
-            <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-               <li class="list-inline-item dropdown">
-                  <a class="text-black nav-link" href="#" data-bs-toggle="dropdown" aria-haspopup="true"
-                     aria-expanded="false">
-                     <div class="text-center">
+         <div class="col-12 col-lg-5 text-end">
+            <ul class="list-inline">
+               <li class="list-inline-item">
+                  <a class="text-black nav-link" href="#">
+                     <div class="">
                         <a href="{{ url_for('register') }}">Sign Up</a>
                      </div>
                   </a>
@@ -76,7 +75,7 @@
                <!-- favourites -->
                <li class="list-inline-item">
                   <a class="font-weight-bold text-black nav-link" href="#">
-                     <div class="text-center">
+                     <div class="">
                         <a href="{{ url_for('login') }}">Sign In</a>
                      </div>
                   </a>
@@ -92,7 +91,6 @@
                <span class="navbar-toggler-icon"></span>
             </button>
             {% include 'mobile-top-header.html' %} {% include 'main-nav.html' %}
-
          </nav>
       </div>
       <!-- Information Banner -->
@@ -107,6 +105,7 @@
          </div>
       </div>
    </header>
+
    <div class="flash-messages">
       <!-- flash messages -->
       {% with messages = get_flashed_messages() %}

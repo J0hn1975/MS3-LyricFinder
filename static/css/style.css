@@ -18,12 +18,16 @@ body {
 .bg {
     min-height: 615px;
 }
- 
+
+.bg-amber {
+    background-color: #FDB750;
+}
+
 /* Change font of brand logo */
 .brand-logo {
-   position: absolute;
-   left: 50%;
-   transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* Style headings for flash messages */
@@ -63,7 +67,7 @@ h4 {
 }
 
 /* Style p class for register */
-#register  {
+#register {
     font-size: 20px;
     line-height: 320%;
     margin-bottom: 2px;
@@ -71,7 +75,7 @@ h4 {
 }
 
 /* Style register link text on home page */
-#register-text  {
+#register-text {
     font-size: 20px;
     line-height: 320%;
     margin-bottom: 2px;
@@ -101,10 +105,13 @@ h4 {
 /* NAVIGATION */
 /**************************/
 
-ul, a, li {
-    list-style: none;
+a {
     text-decoration: none;
-    display: inline;
+
+}
+
+.nav-link {
+    padding: 0;
 }
 
 
@@ -140,7 +147,8 @@ ul, a, li {
     align-items: center;
 }
 
-.icon, .search {
+.icon,
+.search {
     background: white;
 }
 
@@ -148,20 +156,20 @@ ul, a, li {
 /* Style 404 page */
 .page_not_found {
     margin-top: 100px;
-    line-height:100%;
+    line-height: 100%;
     font-size: 3rem;
     margin-bottom: 40px;
 }
 
 /* Error 404 message */
 .error_message {
-    line-height:223%;
+    line-height: 223%;
     font-size: 3rem;
 }
 
 /* Redirect to Home Page */
 .redirect {
-    line-height:225%;
+    line-height: 225%;
     font-size: 3rem;
     margin-bottom: 91px;
 }
@@ -238,7 +246,7 @@ i.fa-minus-circle {
 /* Text colour for submit */
 .submit {
     color: black;
-}         
+}
 
 /* Text colour for search icon */
 i.fa-search {
@@ -247,14 +255,14 @@ i.fa-search {
 
 /*............................................Footer*/
 /* Fix empty link error on WAVE validation */
-.sr-only{
-    position:absolute;
-    left:-10000px;
-    top:auto;
-    width:1px;
-    height:1px;
-    overflow:hidden;
-  }
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
 
 /*............................................Media Queries*/
 /* Change font size of mobile brand logo */
