@@ -1,15 +1,16 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
-        <a href="" class="logo-font fw-bold nav-link text-white mr-5">Home</a>
-        <a href="" class="logo-font fw-bold nav-link text-white mr-5">Lyrics</a>
-        {% if session.user %}
-        <a href="" class="logo-font fw-bold nav-link text-white mr-5">Profile</a>
-        <a href="" class="logo-font fw-bold nav-link text-white mr-5">New Lyrics</a>
-        {% if session.user|lower == "admin"|lower %}
-        <a href="" class="logo-font fw-bold nav-link text-white mr-5">Manage Genres</a>
-        {% endif %}
+        <a href="{{ url_for('home') }}" class="logo-font fw-bold nav-link text-white mr-5">Home</a>
+        <a href="{{ url_for('get_lyrics') }}" class="logo-font fw-bold nav-link text-white mr-5">Lyrics</a>
         <a href="" class="logo-font fw-bold nav-link text-white mr-5">Contact Us</a>
-        <a href="" class="logo-font fw-bold nav-link text-white mr-5">Log Out</a>
+        {% if session.user %}
+        <a href="{{ url_for('profile', username=session['user']) }}"
+            class="logo-font fw-bold nav-link text-white mr-5">Profile</a>
+        <a href="{{ url_for('add_lyrics') }}" class="logo-font fw-bold nav-link text-white mr-5">New Lyrics</a>
+        {% if session.user|lower == "admin"|lower %}
+        <a href="{{ url_for('get_genres') }}" class="logo-font fw-bold nav-link text-white mr-5">Manage Genres</a>
+        {% endif %}
+        <a href="{{ url_for('logout') }}" class="logo-font fw-bold nav-link text-white mr-5">Log Out</a>
         {% endif %}
     </ul>
 </div>
