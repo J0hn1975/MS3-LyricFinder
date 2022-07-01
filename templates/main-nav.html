@@ -1,59 +1,15 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <a href="" class="logo-font fw-bold nav-link text-white mr-5">Home</a>
-        <!-- Main nav menu links -->
-        <li class="nav-item dropdown">
-            <a class="logo-font fw-bold nav-link text-white mr-5" href="#" id="all-products-link"
-                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                All Products
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="#?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="#?sort=rating&direction=desc" class="dropdown-item">By Rating</a>
-                <a href="#?sort=category&direction=asc" class="dropdown-item">By Category</a>
-                <a href="#" class="dropdown-item">All Products</a>
-            </div>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="logo-font fw-bold nav-link text-white mr-5" href="#" id="clothing-link" data-bs-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Shop
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="#?category=sports_bra,leggings" class="dropdown-item">Women</a>
-                <a href="#?category=shorts,tops_t-shirts" class="dropdown-item">Men</a>
-                <a href="#?category=fitness_equipment" class="dropdown-item">Fitness Equipment</a>
-                <a href="#?category=sports_nutrition" class="dropdown-item">Nutrition</a>
-            </div>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="logo-font fw-bold nav-link text-white" href="#" id="homeware-link" data-bs-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Plans
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="#" class="dropdown-item">Exercise</a>
-                <a href="#" class="dropdown-item">Nutrition</a>
-            </div>
-        </li>
-        <li class="nav-item">
-            <a href="#" class="logo-font fw-bold nav-link text-white" id="contact-link">
-                Contact Us
-            </a>
-        </li>
-
-        <li class="nav-item dropdown">
-            <a class="logo-font fw-bold nav-link text-white" href="#" id="specials-link" data-bs-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Special Offers
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="#" class="dropdown-item">New Arrivals</a>
-                <a href="#" class="dropdown-item">Deals</a>
-                <a href="#" class="dropdown-item">Clearance</a>
-                <a href="#" class="dropdown-item">All
-                    Specials</a>
-            </div>
-        </li>
+        <a href="" class="logo-font fw-bold nav-link text-white mr-5">Lyrics</a>
+        {% if session.user %}
+        <a href="" class="logo-font fw-bold nav-link text-white mr-5">Profile</a>
+        <a href="" class="logo-font fw-bold nav-link text-white mr-5">New Lyrics</a>
+        {% if session.user|lower == "admin"|lower %}
+        <a href="" class="logo-font fw-bold nav-link text-white mr-5">Manage Genres</a>
+        {% endif %}
+        <a href="" class="logo-font fw-bold nav-link text-white mr-5">Contact Us</a>
+        <a href="" class="logo-font fw-bold nav-link text-white mr-5">Log Out</a>
+        {% endif %}
     </ul>
 </div>
