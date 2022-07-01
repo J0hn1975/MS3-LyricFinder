@@ -3,25 +3,27 @@
 
 <div class="row container">
    <div class="col s12">
-      <div class="bg">
-         <!-- Tracking in text effect-->
-         <div class="tracking-in-expand center-align">
-            <!-- Main heading for page -->
-            <h3>Welcome to Lyric Finder</h3>
-            <!-- Wecolme message -->
-            <p>
-               Hi and Welcome to Lyric Finder!. A site where you can search for your favourite song lyrics with other
-               music fans. On this site, you can view lyrics created by other users or even add your own
-               <br />
-               <br />
-               <a href="{{ url_for('register') }}" class="underline" id="register-text">Register</a> here! Already a
-               member? <a href="{{ url_for('login') }}" class="underline" id="login-text">Log In</a> here! <br />
-               <br />
-               Feel free to login and add your own lyrics.
-            </p>
-         </div>
+      <div class="container">
+         <img href="{{url_for('static', filename='images/image_webp')}}" alt="Customer photo" />
+      </div>
+      <!-- Tracking in text effect-->
+      <div class="tracking-in-expand center-align">
+         <!-- Main heading for page -->
+         <h3>Welcome to Lyric Finder</h3>
+         <!-- Wecolme message -->
+         <p>
+            Hi and Welcome to Lyric Finder!. A site where you can search for your favourite song lyrics with other
+            music fans. On this site, you can view lyrics created by other users or even add your own
+            <br />
+            <br />
+            <a href="{{ url_for('register') }}" class="underline" id="register-text">Register</a> here! Already a
+            member? <a href="{{ url_for('login') }}" class="underline" id="login-text">Log In</a> here! <br />
+            <br />
+            Feel free to login and add your own lyrics.
+         </p>
       </div>
    </div>
+</div>
 </div>
 
 {% endblock %}
