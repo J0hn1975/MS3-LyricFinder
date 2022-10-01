@@ -29,7 +29,6 @@ def page_not_found(error) -> object:
     return render_template('404.html'), 404
 
 
-@app.route("/")
 @app.route("/home")
 def home() -> object:
     """
